@@ -8,7 +8,7 @@
 <body>
   <!-- Üst Menü -->
   <div class="navbar">
-    <div class="logo" id="nav-logo" style="cursor: pointer;">🚀 Kripto & Hisse Portföy</div>
+    <div class="logo" id="nav-logo" style="cursor: pointer;">🚀 Kripto & Maden Portföy</div>
     <div id="auth-section">
       <button id="nav-login" class="btn-primary">Giriş / Kayıt</button>
       <div id="user-menu" class="hidden">
@@ -31,16 +31,16 @@
       <h2>💼 Sepetim</h2>
       <div id="portfolio-form" class="hidden">
         <div class="input-row">
-            <input type="text" id="asset-name" placeholder="Örn: BTCUSDT veya THYAO">
+            <input type="text" id="asset-name" placeholder="Örn: BTCUSDT veya GRAM ALTIN">
             <input type="number" id="asset-amount" placeholder="Adet">
-            <input type="number" id="asset-buy-price" placeholder="Alış ($ veya ₺)">
+            <input type="number" id="asset-buy-price" placeholder="Alış Fiyatı">
         </div>
         <button id="add-asset-btn" class="btn-success" style="width: 100%; margin-top:10px;">Sepete Ekle</button>
       </div>
       <p id="guest-portfolio-msg" class="text-muted">Portföy oluşturmak için giriş yapmalısınız.</p>
       
       <div class="portfolio-summary">
-        <h3>Kar/Zarar: <span id="total-pnl">0.00$</span></h3>
+        <h3>Kar/Zarar: <span id="total-pnl">0.00</span></h3>
       </div>
       <table class="cmc-table">
         <thead>
@@ -50,15 +50,15 @@
       </table>
     </div>
 
-    <!-- Orta ve Sağ Panel: Piyasalar (Genişletildi) -->
+    <!-- Orta ve Sağ Panel: Piyasalar -->
     <div class="market-section panel">
       <div class="market-header">
         <h2>📈 Canlı Piyasalar</h2>
         <div class="market-tabs">
             <button id="tab-crypto" class="tab-btn active">Kripto</button>
-            <button id="tab-bist" class="tab-btn">BIST (Demo)</button>
+            <button id="tab-metals" class="tab-btn">Madenler</button>
         </div>
-        <input type="text" id="market-search" placeholder="Coin/Hisse Ara...">
+        <input type="text" id="market-search" placeholder="Varlık Ara...">
       </div>
       <div class="table-responsive">
           <table class="cmc-table">
@@ -68,7 +68,7 @@
                   <th style="text-align: left;">Varlık Adı</th>
                   <th>Fiyat</th>
                   <th>24s Değişim</th>
-                  <th>Hacim (24s)</th>
+                  <th>Hacim</th>
                   <th>İşlem</th>
               </tr>
             </thead>
@@ -79,7 +79,7 @@
 
   </div>
 
-  <!-- BÖLÜM 2: PROFİL DÜZENLEME EKRANI (Hatalar Giderildi) -->
+  <!-- BÖLÜM 2: PROFİL DÜZENLEME EKRANI -->
   <div id="edit-profile-section" class="panel hidden form-panel">
     <h2>⚙️ Profili Düzenle</h2>
     <form id="profile-form">
@@ -128,11 +128,11 @@
     </div>
   </div>
 
-  <!-- YENİ: SAĞ ALT UÇAN SOHBET BUTONU VE KUTUSU -->
+  <!-- UÇAN SOHBET BUTONU VE KUTUSU -->
   <button id="floating-chat-btn">💬 Genel Sohbet</button>
   <div id="floating-chat-box" class="hidden">
       <div class="chat-header">
-          💬 Kripto & Hisse Sohbet
+          💬 Kripto & Maden Sohbet
           <span id="close-chat" style="cursor:pointer; color: #F6465D; font-weight:bold;">✖</span>
       </div>
       <div id="chat-messages" class="chat-messages"></div>
@@ -142,7 +142,6 @@
       </div>
   </div>
 
-  <!-- Reklam Alanı -->
   <div class="ad-banner">Sponsorlu Bağlantı - Reklam Alanı</div>
 
   <script type="module" src="script.js"></script>
