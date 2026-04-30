@@ -1,0 +1,4838 @@
+{
+    "last_update": "2026-01-07 22:33:48",
+    "coins": [
+        {
+            "symbol": "BTCUSDT",
+            "price": 90879.4,
+            "rsi": 24.44,
+            "price_change": 0.02,
+            "volume_change": -50.57,
+            "score": 3.86,
+            "position": "Long"
+        },
+        {
+            "symbol": "ETHUSDT",
+            "price": 3135.43,
+            "rsi": 16.33,
+            "price_change": -0.31,
+            "volume_change": -41.36,
+            "score": 2.82,
+            "position": "Long"
+        },
+        {
+            "symbol": "BCHUSDT",
+            "price": 624.64,
+            "rsi": 39.51,
+            "price_change": -0.14,
+            "volume_change": -47.84,
+            "score": 6.98,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "XRPUSDT",
+            "price": 2.1776,
+            "rsi": 28.29,
+            "price_change": -0.43,
+            "volume_change": -5.45,
+            "score": 8.68,
+            "position": "Long"
+        },
+        {
+            "symbol": "LTCUSDT",
+            "price": 81.19,
+            "rsi": 26.42,
+            "price_change": -0.25,
+            "volume_change": 77.93,
+            "score": 16.83,
+            "position": "Long"
+        },
+        {
+            "symbol": "TRXUSDT",
+            "price": 0.29694,
+            "rsi": 66.27,
+            "price_change": -0.44,
+            "volume_change": 40.85,
+            "score": 14.4,
+            "position": "Short"
+        },
+        {
+            "symbol": "ETCUSDT",
+            "price": 12.762,
+            "rsi": 36.92,
+            "price_change": -0.29,
+            "volume_change": -38.09,
+            "score": 7.29,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "LINKUSDT",
+            "price": 13.339,
+            "rsi": 30.14,
+            "price_change": -0.33,
+            "volume_change": -50.49,
+            "score": 4.65,
+            "position": "Long"
+        },
+        {
+            "symbol": "XLMUSDT",
+            "price": 0.23395,
+            "rsi": 36.16,
+            "price_change": -0.14,
+            "volume_change": -32.08,
+            "score": 7.88,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ADAUSDT",
+            "price": 0.4014,
+            "rsi": 39.62,
+            "price_change": -0.47,
+            "volume_change": -29.71,
+            "score": 8.48,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "XMRUSDT",
+            "price": 437.53,
+            "rsi": 30.32,
+            "price_change": 0.07,
+            "volume_change": -67.5,
+            "score": 3.38,
+            "position": "Long"
+        },
+        {
+            "symbol": "DASHUSDT",
+            "price": 40.94,
+            "rsi": 20.68,
+            "price_change": -0.7,
+            "volume_change": -4.95,
+            "score": 6.94,
+            "position": "Long"
+        },
+        {
+            "symbol": "ZECUSDT",
+            "price": 477.15,
+            "rsi": 33.59,
+            "price_change": -1.5,
+            "volume_change": 137.32,
+            "score": 22.95,
+            "position": "Long"
+        },
+        {
+            "symbol": "XTZUSDT",
+            "price": 0.565,
+            "rsi": 33.33,
+            "price_change": -0.7,
+            "volume_change": -45.22,
+            "score": 5.44,
+            "position": "Long"
+        },
+        {
+            "symbol": "BNBUSDT",
+            "price": 894.73,
+            "rsi": 21.04,
+            "price_change": -0.28,
+            "volume_change": -1.56,
+            "score": 7.77,
+            "position": "Long"
+        },
+        {
+            "symbol": "ATOMUSDT",
+            "price": 2.418,
+            "rsi": 47.33,
+            "price_change": -0.21,
+            "volume_change": -72.75,
+            "score": 5.98,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ONTUSDT",
+            "price": 0.0654,
+            "rsi": 43.4,
+            "price_change": -0.3,
+            "volume_change": -38.62,
+            "score": 8.51,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "IOTAUSDT",
+            "price": 0.1073,
+            "rsi": 37.04,
+            "price_change": -0.28,
+            "volume_change": -74.04,
+            "score": 3.72,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BATUSDT",
+            "price": 0.2151,
+            "rsi": 38.35,
+            "price_change": -1.06,
+            "volume_change": 92.91,
+            "score": 19.9,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "VETUSDT",
+            "price": 0.012071,
+            "rsi": 31.63,
+            "price_change": -0.45,
+            "volume_change": -34.08,
+            "score": 6.47,
+            "position": "Long"
+        },
+        {
+            "symbol": "NEOUSDT",
+            "price": 3.961,
+            "rsi": 40.9,
+            "price_change": -0.6,
+            "volume_change": -45.06,
+            "score": 7.07,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "QTUMUSDT",
+            "price": 1.465,
+            "rsi": 40.97,
+            "price_change": -0.34,
+            "volume_change": -16.47,
+            "score": 10.21,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "IOSTUSDT",
+            "price": 0.001944,
+            "rsi": 62.6,
+            "price_change": -0.05,
+            "volume_change": -74.22,
+            "score": 4.01,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "THETAUSDT",
+            "price": 0.3035,
+            "rsi": 34.84,
+            "price_change": -0.52,
+            "volume_change": -41.22,
+            "score": 6.32,
+            "position": "Long"
+        },
+        {
+            "symbol": "ALGOUSDT",
+            "price": 0.1358,
+            "rsi": 36.64,
+            "price_change": -0.51,
+            "volume_change": -59.23,
+            "score": 4.89,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ZILUSDT",
+            "price": 0.00518,
+            "rsi": 34.67,
+            "price_change": -0.58,
+            "volume_change": -52.35,
+            "score": 5.12,
+            "position": "Long"
+        },
+        {
+            "symbol": "KNCUSDT",
+            "price": 0.2464,
+            "rsi": 44.3,
+            "price_change": -0.32,
+            "volume_change": -56.0,
+            "score": 6.94,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ZRXUSDT",
+            "price": 0.1428,
+            "rsi": 38.02,
+            "price_change": -0.42,
+            "volume_change": -67.98,
+            "score": 4.39,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "COMPUSDT",
+            "price": 26.77,
+            "rsi": 43.09,
+            "price_change": -0.19,
+            "volume_change": -44.69,
+            "score": 7.96,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "DOGEUSDT",
+            "price": 0.14612,
+            "rsi": 45.78,
+            "price_change": -0.25,
+            "volume_change": -19.97,
+            "score": 10.91,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "KAVAUSDT",
+            "price": 0.0856,
+            "rsi": 31.17,
+            "price_change": -0.58,
+            "volume_change": -47.56,
+            "score": 4.9,
+            "position": "Long"
+        },
+        {
+            "symbol": "BANDUSDT",
+            "price": 0.3506,
+            "rsi": 34.6,
+            "price_change": -0.48,
+            "volume_change": -45.57,
+            "score": 5.88,
+            "position": "Long"
+        },
+        {
+            "symbol": "RLCUSDT",
+            "price": 0.6973,
+            "rsi": 35.22,
+            "price_change": -0.37,
+            "volume_change": -32.81,
+            "score": 7.39,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SNXUSDT",
+            "price": 0.495,
+            "rsi": 31.91,
+            "price_change": -0.2,
+            "volume_change": -40.43,
+            "score": 6.14,
+            "position": "Long"
+        },
+        {
+            "symbol": "DOTUSDT",
+            "price": 2.138,
+            "rsi": 36.92,
+            "price_change": -0.6,
+            "volume_change": -35.0,
+            "score": 7.28,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "YFIUSDT",
+            "price": 3627.0,
+            "rsi": 33.98,
+            "price_change": -0.49,
+            "volume_change": -38.96,
+            "score": 6.41,
+            "position": "Long"
+        },
+        {
+            "symbol": "CRVUSDT",
+            "price": 0.414,
+            "rsi": 46.51,
+            "price_change": 0.24,
+            "volume_change": -71.04,
+            "score": 6.44,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TRBUSDT",
+            "price": 21.874,
+            "rsi": 33.65,
+            "price_change": -0.31,
+            "volume_change": -49.59,
+            "score": 5.46,
+            "position": "Long"
+        },
+        {
+            "symbol": "RUNEUSDT",
+            "price": 0.5803,
+            "rsi": 32.43,
+            "price_change": -0.03,
+            "volume_change": -14.08,
+            "score": 9.04,
+            "position": "Long"
+        },
+        {
+            "symbol": "SUSHIUSDT",
+            "price": 0.3355,
+            "rsi": 35.6,
+            "price_change": -0.24,
+            "volume_change": -62.91,
+            "score": 4.59,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "EGLDUSDT",
+            "price": 6.296,
+            "rsi": 32.28,
+            "price_change": -0.91,
+            "volume_change": 11.51,
+            "score": 10.69,
+            "position": "Long"
+        },
+        {
+            "symbol": "SOLUSDT",
+            "price": 135.07,
+            "rsi": 28.12,
+            "price_change": -0.09,
+            "volume_change": -56.97,
+            "score": 3.84,
+            "position": "Long"
+        },
+        {
+            "symbol": "ICXUSDT",
+            "price": 0.0588,
+            "rsi": 33.96,
+            "price_change": -0.17,
+            "volume_change": -58.9,
+            "score": 4.73,
+            "position": "Long"
+        },
+        {
+            "symbol": "STORJUSDT",
+            "price": 0.1371,
+            "rsi": 22.4,
+            "price_change": -0.58,
+            "volume_change": -34.03,
+            "score": 4.5,
+            "position": "Long"
+        },
+        {
+            "symbol": "UNIUSDT",
+            "price": 5.677,
+            "rsi": 20.36,
+            "price_change": -0.49,
+            "volume_change": 6.18,
+            "score": 8.2,
+            "position": "Long"
+        },
+        {
+            "symbol": "AVAXUSDT",
+            "price": 14.034,
+            "rsi": 23.9,
+            "price_change": -0.18,
+            "volume_change": -38.47,
+            "score": 4.75,
+            "position": "Long"
+        },
+        {
+            "symbol": "ENJUSDT",
+            "price": 0.03142,
+            "rsi": 39.05,
+            "price_change": -0.44,
+            "volume_change": -54.6,
+            "score": 5.91,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "KSMUSDT",
+            "price": 7.878,
+            "rsi": 31.85,
+            "price_change": -0.13,
+            "volume_change": -30.35,
+            "score": 7.21,
+            "position": "Long"
+        },
+        {
+            "symbol": "NEARUSDT",
+            "price": 1.72,
+            "rsi": 37.27,
+            "price_change": -0.35,
+            "volume_change": -24.97,
+            "score": 8.61,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AAVEUSDT",
+            "price": 166.83,
+            "rsi": 36.23,
+            "price_change": -0.36,
+            "volume_change": -30.15,
+            "score": 7.87,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "FILUSDT",
+            "price": 1.52,
+            "rsi": 39.89,
+            "price_change": -0.65,
+            "volume_change": -47.42,
+            "score": 6.58,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "RSRUSDT",
+            "price": 0.002865,
+            "rsi": 31.08,
+            "price_change": -0.59,
+            "volume_change": -3.63,
+            "score": 9.26,
+            "position": "Long"
+        },
+        {
+            "symbol": "LRCUSDT",
+            "price": 0.05274,
+            "rsi": 35.31,
+            "price_change": -0.47,
+            "volume_change": -25.67,
+            "score": 8.02,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BELUSDT",
+            "price": 0.1414,
+            "rsi": 40.46,
+            "price_change": -0.56,
+            "volume_change": -48.64,
+            "score": 6.67,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AXSUSDT",
+            "price": 0.944,
+            "rsi": 37.37,
+            "price_change": -0.21,
+            "volume_change": -50.53,
+            "score": 6.21,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ZENUSDT",
+            "price": 9.142,
+            "rsi": 43.06,
+            "price_change": -2.04,
+            "volume_change": 71.82,
+            "score": 17.76,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SKLUSDT",
+            "price": 0.01095,
+            "rsi": 40.35,
+            "price_change": -0.54,
+            "volume_change": -60.25,
+            "score": 5.5,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "GRTUSDT",
+            "price": 0.04031,
+            "rsi": 37.28,
+            "price_change": -0.3,
+            "volume_change": -33.33,
+            "score": 7.83,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "1INCHUSDT",
+            "price": 0.1559,
+            "rsi": 34.17,
+            "price_change": -0.26,
+            "volume_change": -42.49,
+            "score": 6.33,
+            "position": "Long"
+        },
+        {
+            "symbol": "CHZUSDT",
+            "price": 0.043,
+            "rsi": 50.95,
+            "price_change": 0.28,
+            "volume_change": -50.39,
+            "score": 9.05,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SANDUSDT",
+            "price": 0.12044,
+            "rsi": 36.86,
+            "price_change": -0.22,
+            "volume_change": -46.85,
+            "score": 6.47,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ANKRUSDT",
+            "price": 0.007196,
+            "rsi": 40.56,
+            "price_change": -0.5,
+            "volume_change": -58.82,
+            "score": 5.73,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "RVNUSDT",
+            "price": 0.00763,
+            "rsi": 41.18,
+            "price_change": -0.13,
+            "volume_change": -23.31,
+            "score": 9.77,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SFPUSDT",
+            "price": 0.3509,
+            "rsi": 44.84,
+            "price_change": 0.57,
+            "volume_change": 359.81,
+            "score": 49.52,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "COTIUSDT",
+            "price": 0.02209,
+            "rsi": 38.05,
+            "price_change": -0.41,
+            "volume_change": -16.85,
+            "score": 9.52,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CHRUSDT",
+            "price": 0.0451,
+            "rsi": 39.02,
+            "price_change": -0.22,
+            "volume_change": -53.87,
+            "score": 6.2,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MANAUSDT",
+            "price": 0.1408,
+            "rsi": 39.26,
+            "price_change": -0.28,
+            "volume_change": -51.6,
+            "score": 6.41,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ALICEUSDT",
+            "price": 0.179,
+            "rsi": 37.5,
+            "price_change": 0.0,
+            "volume_change": -33.59,
+            "score": 8.14,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HBARUSDT",
+            "price": 0.1227,
+            "rsi": 35.08,
+            "price_change": -0.55,
+            "volume_change": -45.47,
+            "score": 5.92,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ONEUSDT",
+            "price": 0.0042,
+            "rsi": 36.59,
+            "price_change": -0.24,
+            "volume_change": -50.94,
+            "score": 5.99,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "DENTUSDT",
+            "price": 0.000232,
+            "rsi": 32.0,
+            "price_change": -0.43,
+            "volume_change": -20.79,
+            "score": 7.89,
+            "position": "Long"
+        },
+        {
+            "symbol": "CELRUSDT",
+            "price": 0.00436,
+            "rsi": 44.9,
+            "price_change": 0.0,
+            "volume_change": -28.7,
+            "score": 10.11,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HOTUSDT",
+            "price": 0.000546,
+            "rsi": 41.54,
+            "price_change": -0.55,
+            "volume_change": -42.37,
+            "score": 7.52,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MTLUSDT",
+            "price": 0.3916,
+            "rsi": 29.43,
+            "price_change": -0.66,
+            "volume_change": 105.7,
+            "score": 19.8,
+            "position": "Long"
+        },
+        {
+            "symbol": "OGNUSDT",
+            "price": 0.0319,
+            "rsi": 26.09,
+            "price_change": -0.31,
+            "volume_change": -53.98,
+            "score": 3.51,
+            "position": "Long"
+        },
+        {
+            "symbol": "NKNUSDT",
+            "price": 0.01314,
+            "rsi": 37.3,
+            "price_change": -0.08,
+            "volume_change": -25.92,
+            "score": 8.79,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "1000SHIBUSDT",
+            "price": 0.008809,
+            "rsi": 43.63,
+            "price_change": -0.17,
+            "volume_change": 0.36,
+            "score": 12.59,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "GTCUSDT",
+            "price": 0.147,
+            "rsi": 43.75,
+            "price_change": 0.0,
+            "volume_change": -76.81,
+            "score": 5.07,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BTCDOMUSDT",
+            "price": 4467.3,
+            "rsi": 66.59,
+            "price_change": 0.33,
+            "volume_change": -19.63,
+            "score": 9.05,
+            "position": "Short"
+        },
+        {
+            "symbol": "IOTXUSDT",
+            "price": 0.00817,
+            "rsi": 35.48,
+            "price_change": -0.12,
+            "volume_change": -65.35,
+            "score": 4.44,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "C98USDT",
+            "price": 0.0247,
+            "rsi": 44.44,
+            "price_change": 0.0,
+            "volume_change": -65.55,
+            "score": 6.33,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MASKUSDT",
+            "price": 0.6656,
+            "rsi": 37.14,
+            "price_change": -0.27,
+            "volume_change": -54.51,
+            "score": 5.71,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ATAUSDT",
+            "price": 0.0183,
+            "rsi": 31.25,
+            "price_change": 0.0,
+            "volume_change": 3.18,
+            "score": 10.57,
+            "position": "Long"
+        },
+        {
+            "symbol": "DYDXUSDT",
+            "price": 0.196,
+            "rsi": 35.29,
+            "price_change": 0.0,
+            "volume_change": -72.78,
+            "score": 3.78,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "1000XECUSDT",
+            "price": 0.01184,
+            "rsi": 33.33,
+            "price_change": -0.34,
+            "volume_change": -16.29,
+            "score": 8.7,
+            "position": "Long"
+        },
+        {
+            "symbol": "GALAUSDT",
+            "price": 0.00729,
+            "rsi": 42.42,
+            "price_change": -0.14,
+            "volume_change": -57.45,
+            "score": 6.6,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CELOUSDT",
+            "price": 0.126,
+            "rsi": 35.71,
+            "price_change": 0.8,
+            "volume_change": -61.47,
+            "score": 5.8,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ARUSDT",
+            "price": 3.93,
+            "rsi": 43.96,
+            "price_change": -0.35,
+            "volume_change": -43.46,
+            "score": 8.09,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ARPAUSDT",
+            "price": 0.0132,
+            "rsi": 38.89,
+            "price_change": -0.3,
+            "volume_change": -47.86,
+            "score": 6.69,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CTSIUSDT",
+            "price": 0.0365,
+            "rsi": 52.31,
+            "price_change": -3.69,
+            "volume_change": -62.7,
+            "score": 3.57,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "LPTUSDT",
+            "price": 3.245,
+            "rsi": 31.76,
+            "price_change": -0.4,
+            "volume_change": -50.63,
+            "score": 4.89,
+            "position": "Long"
+        },
+        {
+            "symbol": "ENSUSDT",
+            "price": 10.677,
+            "rsi": 33.79,
+            "price_change": -0.22,
+            "volume_change": -26.03,
+            "score": 7.93,
+            "position": "Long"
+        },
+        {
+            "symbol": "PEOPLEUSDT",
+            "price": 0.01105,
+            "rsi": 40.0,
+            "price_change": -0.45,
+            "volume_change": -38.63,
+            "score": 7.69,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ROSEUSDT",
+            "price": 0.01208,
+            "rsi": 34.81,
+            "price_change": -0.82,
+            "volume_change": 58.41,
+            "score": 15.98,
+            "position": "Long"
+        },
+        {
+            "symbol": "DUSKUSDT",
+            "price": 0.0547,
+            "rsi": 26.15,
+            "price_change": -0.83,
+            "volume_change": -32.06,
+            "score": 5.19,
+            "position": "Long"
+        },
+        {
+            "symbol": "FLOWUSDT",
+            "price": 0.098,
+            "rsi": 50.0,
+            "price_change": -1.01,
+            "volume_change": -37.38,
+            "score": 9.25,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "IMXUSDT",
+            "price": 0.2779,
+            "rsi": 35.87,
+            "price_change": -0.43,
+            "volume_change": -44.7,
+            "score": 6.27,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "API3USDT",
+            "price": 0.4608,
+            "rsi": 34.14,
+            "price_change": -0.3,
+            "volume_change": -62.6,
+            "score": 4.26,
+            "position": "Long"
+        },
+        {
+            "symbol": "GMTUSDT",
+            "price": 0.01608,
+            "rsi": 36.02,
+            "price_change": -0.5,
+            "volume_change": -0.68,
+            "score": 10.64,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "APEUSDT",
+            "price": 0.2182,
+            "rsi": 43.04,
+            "price_change": -0.23,
+            "volume_change": -24.62,
+            "score": 9.92,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "WOOUSDT",
+            "price": 0.03103,
+            "rsi": 43.24,
+            "price_change": 0.49,
+            "volume_change": 14.15,
+            "score": 14.55,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "JASMYUSDT",
+            "price": 0.008591,
+            "rsi": 37.39,
+            "price_change": -0.12,
+            "volume_change": -58.05,
+            "score": 5.56,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "OPUSDT",
+            "price": 0.3175,
+            "rsi": 39.06,
+            "price_change": -0.19,
+            "volume_change": -49.5,
+            "score": 6.67,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "INJUSDT",
+            "price": 5.28,
+            "rsi": 35.25,
+            "price_change": -0.17,
+            "volume_change": -30.69,
+            "score": 7.81,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "STGUSDT",
+            "price": 0.1212,
+            "rsi": 46.49,
+            "price_change": -0.49,
+            "volume_change": -61.94,
+            "score": 6.61,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SPELLUSDT",
+            "price": 0.0002838,
+            "rsi": 42.31,
+            "price_change": 0.0,
+            "volume_change": 9.84,
+            "score": 13.45,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "1000LUNCUSDT",
+            "price": 0.04332,
+            "rsi": 22.77,
+            "price_change": -0.35,
+            "volume_change": -12.46,
+            "score": 6.96,
+            "position": "Long"
+        },
+        {
+            "symbol": "LUNA2USDT",
+            "price": 0.09119,
+            "rsi": 30.25,
+            "price_change": -0.46,
+            "volume_change": -33.13,
+            "score": 6.28,
+            "position": "Long"
+        },
+        {
+            "symbol": "LDOUSDT",
+            "price": 0.6337,
+            "rsi": 35.86,
+            "price_change": -0.25,
+            "volume_change": -39.69,
+            "score": 6.95,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ICPUSDT",
+            "price": 3.256,
+            "rsi": 46.59,
+            "price_change": -0.21,
+            "volume_change": -61.09,
+            "score": 6.99,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "APTUSDT",
+            "price": 1.8834,
+            "rsi": 44.75,
+            "price_change": -0.03,
+            "volume_change": -17.01,
+            "score": 11.22,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "QNTUSDT",
+            "price": 75.38,
+            "rsi": 25.28,
+            "price_change": -0.19,
+            "volume_change": -23.83,
+            "score": 6.49,
+            "position": "Long"
+        },
+        {
+            "symbol": "FETUSDT",
+            "price": 0.2777,
+            "rsi": 41.86,
+            "price_change": -0.25,
+            "volume_change": -23.17,
+            "score": 9.8,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HOOKUSDT",
+            "price": 0.03992,
+            "rsi": 36.57,
+            "price_change": -0.4,
+            "volume_change": -27.8,
+            "score": 8.13,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MAGICUSDT",
+            "price": 0.098,
+            "rsi": 31.03,
+            "price_change": -0.1,
+            "volume_change": -41.76,
+            "score": 5.93,
+            "position": "Long"
+        },
+        {
+            "symbol": "TUSDT",
+            "price": 0.00962,
+            "rsi": 49.73,
+            "price_change": -2.63,
+            "volume_change": -78.8,
+            "score": 3.43,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HIGHUSDT",
+            "price": 0.23,
+            "rsi": 41.79,
+            "price_change": -0.3,
+            "volume_change": -65.11,
+            "score": 5.54,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MINAUSDT",
+            "price": 0.0852,
+            "rsi": 39.58,
+            "price_change": -0.35,
+            "volume_change": -33.93,
+            "score": 8.17,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ASTRUSDT",
+            "price": 0.010782,
+            "rsi": 34.63,
+            "price_change": -0.11,
+            "volume_change": -63.41,
+            "score": 4.47,
+            "position": "Long"
+        },
+        {
+            "symbol": "PHBUSDT",
+            "price": 0.2874,
+            "rsi": 34.49,
+            "price_change": -0.24,
+            "volume_change": -50.88,
+            "score": 5.57,
+            "position": "Long"
+        },
+        {
+            "symbol": "GMXUSDT",
+            "price": 8.441,
+            "rsi": 43.13,
+            "price_change": -0.53,
+            "volume_change": -28.69,
+            "score": 9.23,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CFXUSDT",
+            "price": 0.0784,
+            "rsi": 34.69,
+            "price_change": -0.11,
+            "volume_change": -51.92,
+            "score": 5.63,
+            "position": "Long"
+        },
+        {
+            "symbol": "STXUSDT",
+            "price": 0.3525,
+            "rsi": 37.54,
+            "price_change": -0.68,
+            "volume_change": 8.21,
+            "score": 11.65,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ACHUSDT",
+            "price": 0.009617,
+            "rsi": 69.73,
+            "price_change": 0.4,
+            "volume_change": -80.67,
+            "score": 2.38,
+            "position": "Short"
+        },
+        {
+            "symbol": "SSVUSDT",
+            "price": 4.25,
+            "rsi": 39.66,
+            "price_change": -0.09,
+            "volume_change": -44.47,
+            "score": 7.39,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CKBUSDT",
+            "price": 0.002709,
+            "rsi": 33.49,
+            "price_change": -0.4,
+            "volume_change": -41.65,
+            "score": 6.13,
+            "position": "Long"
+        },
+        {
+            "symbol": "TRUUSDT",
+            "price": 0.01048,
+            "rsi": 21.43,
+            "price_change": -0.19,
+            "volume_change": -47.91,
+            "score": 3.3,
+            "position": "Long"
+        },
+        {
+            "symbol": "LQTYUSDT",
+            "price": 0.396,
+            "rsi": 40.05,
+            "price_change": -0.3,
+            "volume_change": -53.93,
+            "score": 6.31,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "USDCUSDT",
+            "price": 1.0002,
+            "rsi": 99.5,
+            "price_change": 0.02,
+            "volume_change": 358.65,
+            "score": 39.98,
+            "position": "Short"
+        },
+        {
+            "symbol": "IDUSDT",
+            "price": 0.06963,
+            "rsi": 47.34,
+            "price_change": -1.05,
+            "volume_change": 6.56,
+            "score": 13.07,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ARBUSDT",
+            "price": 0.2123,
+            "rsi": 39.91,
+            "price_change": -0.14,
+            "volume_change": -34.26,
+            "score": 8.42,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "JOEUSDT",
+            "price": 0.06859,
+            "rsi": 32.43,
+            "price_change": -0.28,
+            "volume_change": -24.41,
+            "score": 7.77,
+            "position": "Long"
+        },
+        {
+            "symbol": "TLMUSDT",
+            "price": 0.002544,
+            "rsi": 40.61,
+            "price_change": -0.9,
+            "volume_change": -22.74,
+            "score": 8.95,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "RDNTUSDT",
+            "price": 0.01027,
+            "rsi": 34.88,
+            "price_change": -0.19,
+            "volume_change": -49.24,
+            "score": 5.86,
+            "position": "Long"
+        },
+        {
+            "symbol": "HFTUSDT",
+            "price": 0.03045,
+            "rsi": 46.83,
+            "price_change": -0.59,
+            "volume_change": -61.17,
+            "score": 6.66,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "XVSUSDT",
+            "price": 4.565,
+            "rsi": 38.25,
+            "price_change": 0.11,
+            "volume_change": -49.32,
+            "score": 6.83,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BLURUSDT",
+            "price": 0.03167,
+            "rsi": 36.71,
+            "price_change": -0.13,
+            "volume_change": -71.59,
+            "score": 4.06,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "EDUUSDT",
+            "price": 0.1549,
+            "rsi": 24.07,
+            "price_change": -0.64,
+            "volume_change": -5.36,
+            "score": 7.64,
+            "position": "Long"
+        },
+        {
+            "symbol": "SUIUSDT",
+            "price": 1.8346,
+            "rsi": 41.72,
+            "price_change": -0.66,
+            "volume_change": 7.19,
+            "score": 12.41,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "1000PEPEUSDT",
+            "price": 0.006568,
+            "rsi": 43.4,
+            "price_change": -0.41,
+            "volume_change": -45.7,
+            "score": 7.7,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "1000FLOKIUSDT",
+            "price": 0.05547,
+            "rsi": 45.73,
+            "price_change": -0.32,
+            "volume_change": -47.46,
+            "score": 8.08,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "UMAUSDT",
+            "price": 0.7684,
+            "rsi": 33.04,
+            "price_change": -0.29,
+            "volume_change": -26.84,
+            "score": 7.64,
+            "position": "Long"
+        },
+        {
+            "symbol": "NMRUSDT",
+            "price": 10.027,
+            "rsi": 37.4,
+            "price_change": -0.17,
+            "volume_change": -56.1,
+            "score": 5.7,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MAVUSDT",
+            "price": 0.02855,
+            "rsi": 40.68,
+            "price_change": -0.24,
+            "volume_change": -72.27,
+            "score": 4.67,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "XVGUSDT",
+            "price": 0.00575,
+            "rsi": 23.54,
+            "price_change": -1.08,
+            "volume_change": 68.14,
+            "score": 14.44,
+            "position": "Long"
+        },
+        {
+            "symbol": "WLDUSDT",
+            "price": 0.5953,
+            "rsi": 33.23,
+            "price_change": -0.27,
+            "volume_change": -34.63,
+            "score": 6.91,
+            "position": "Long"
+        },
+        {
+            "symbol": "PENDLEUSDT",
+            "price": 2.17,
+            "rsi": 30.95,
+            "price_change": -0.06,
+            "volume_change": -39.73,
+            "score": 6.16,
+            "position": "Long"
+        },
+        {
+            "symbol": "ARKMUSDT",
+            "price": 0.2131,
+            "rsi": 41.03,
+            "price_change": -0.19,
+            "volume_change": -55.71,
+            "score": 6.45,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AGLDUSDT",
+            "price": 0.2885,
+            "rsi": 38.21,
+            "price_change": -0.52,
+            "volume_change": -45.59,
+            "score": 6.56,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "YGGUSDT",
+            "price": 0.07017,
+            "rsi": 33.51,
+            "price_change": -0.16,
+            "volume_change": -55.08,
+            "score": 5.04,
+            "position": "Long"
+        },
+        {
+            "symbol": "DODOXUSDT",
+            "price": 0.01958,
+            "rsi": 43.35,
+            "price_change": -0.54,
+            "volume_change": -58.85,
+            "score": 6.24,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BNTUSDT",
+            "price": 0.4307,
+            "rsi": 28.12,
+            "price_change": 0.28,
+            "volume_change": 55.47,
+            "score": 15.45,
+            "position": "Long"
+        },
+        {
+            "symbol": "OXTUSDT",
+            "price": 0.02557,
+            "rsi": 32.75,
+            "price_change": -0.31,
+            "volume_change": -25.87,
+            "score": 7.65,
+            "position": "Long"
+        },
+        {
+            "symbol": "SEIUSDT",
+            "price": 0.1248,
+            "rsi": 38.37,
+            "price_change": -0.24,
+            "volume_change": -36.87,
+            "score": 7.75,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CYBERUSDT",
+            "price": 0.7815,
+            "rsi": 34.75,
+            "price_change": -0.45,
+            "volume_change": -20.71,
+            "score": 8.43,
+            "position": "Long"
+        },
+        {
+            "symbol": "ARKUSDT",
+            "price": 0.2851,
+            "rsi": 41.97,
+            "price_change": -0.18,
+            "volume_change": -72.99,
+            "score": 4.92,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BICOUSDT",
+            "price": 0.04675,
+            "rsi": 40.76,
+            "price_change": -0.36,
+            "volume_change": -51.46,
+            "score": 6.64,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BIGTIMEUSDT",
+            "price": 0.02172,
+            "rsi": 34.64,
+            "price_change": -1.0,
+            "volume_change": 6.02,
+            "score": 10.53,
+            "position": "Long"
+        },
+        {
+            "symbol": "WAXPUSDT",
+            "price": 0.008779,
+            "rsi": 53.89,
+            "price_change": 0.03,
+            "volume_change": 44.42,
+            "score": 17.7,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BSVUSDT",
+            "price": 19.49,
+            "rsi": 21.87,
+            "price_change": -0.46,
+            "volume_change": -14.94,
+            "score": 6.42,
+            "position": "Long"
+        },
+        {
+            "symbol": "RIFUSDT",
+            "price": 0.03712,
+            "rsi": 38.81,
+            "price_change": -0.03,
+            "volume_change": -11.74,
+            "score": 10.56,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "POLYXUSDT",
+            "price": 0.06144,
+            "rsi": 37.99,
+            "price_change": 0.31,
+            "volume_change": -37.71,
+            "score": 8.14,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "GASUSDT",
+            "price": 2.101,
+            "rsi": 20.0,
+            "price_change": -0.28,
+            "volume_change": -35.61,
+            "score": 4.15,
+            "position": "Long"
+        },
+        {
+            "symbol": "POWRUSDT",
+            "price": 0.09563,
+            "rsi": 49.95,
+            "price_change": 0.55,
+            "volume_change": -74.13,
+            "score": 7.12,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TIAUSDT",
+            "price": 0.567,
+            "rsi": 40.15,
+            "price_change": -0.51,
+            "volume_change": -43.53,
+            "score": 7.17,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CAKEUSDT",
+            "price": 1.9318,
+            "rsi": 27.57,
+            "price_change": 0.06,
+            "volume_change": -27.3,
+            "score": 6.84,
+            "position": "Long"
+        },
+        {
+            "symbol": "MEMEUSDT",
+            "price": 0.001193,
+            "rsi": 39.52,
+            "price_change": -0.17,
+            "volume_change": -41.0,
+            "score": 7.64,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TWTUSDT",
+            "price": 0.9132,
+            "rsi": 38.8,
+            "price_change": 0.01,
+            "volume_change": -27.67,
+            "score": 9.0,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ORDIUSDT",
+            "price": 4.601,
+            "rsi": 42.59,
+            "price_change": -0.45,
+            "volume_change": -43.08,
+            "score": 7.76,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "STEEMUSDT",
+            "price": 0.07366,
+            "rsi": 41.66,
+            "price_change": 0.16,
+            "volume_change": -45.69,
+            "score": 7.93,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ILVUSDT",
+            "price": 6.131,
+            "rsi": 36.74,
+            "price_change": 0.1,
+            "volume_change": 3.02,
+            "score": 11.75,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "NTRNUSDT",
+            "price": 0.02884,
+            "rsi": 39.01,
+            "price_change": -0.52,
+            "volume_change": -45.86,
+            "score": 6.7,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "KASUSDT",
+            "price": 0.04863,
+            "rsi": 34.39,
+            "price_change": -0.1,
+            "volume_change": -65.26,
+            "score": 4.25,
+            "position": "Long"
+        },
+        {
+            "symbol": "BEAMXUSDT",
+            "price": 0.003063,
+            "rsi": 33.87,
+            "price_change": 0.03,
+            "volume_change": -54.62,
+            "score": 5.34,
+            "position": "Long"
+        },
+        {
+            "symbol": "1000BONKUSDT",
+            "price": 0.011441,
+            "rsi": 45.28,
+            "price_change": -0.15,
+            "volume_change": -28.32,
+            "score": 10.08,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "PYTHUSDT",
+            "price": 0.06854,
+            "rsi": 39.74,
+            "price_change": -0.2,
+            "volume_change": -52.1,
+            "score": 6.53,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SUPERUSDT",
+            "price": 0.2216,
+            "rsi": 27.31,
+            "price_change": -0.36,
+            "volume_change": -52.9,
+            "score": 3.81,
+            "position": "Long"
+        },
+        {
+            "symbol": "USTCUSDT",
+            "price": 0.006986,
+            "rsi": 36.08,
+            "price_change": -0.17,
+            "volume_change": 31.58,
+            "score": 14.2,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ONGUSDT",
+            "price": 0.09098,
+            "rsi": 40.72,
+            "price_change": -0.21,
+            "volume_change": -62.68,
+            "score": 5.67,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ETHWUSDT",
+            "price": 0.5799,
+            "rsi": 32.83,
+            "price_change": -1.8,
+            "volume_change": 244.08,
+            "score": 33.18,
+            "position": "Long"
+        },
+        {
+            "symbol": "JTOUSDT",
+            "price": 0.4318,
+            "rsi": 21.15,
+            "price_change": -0.96,
+            "volume_change": 1.28,
+            "score": 7.39,
+            "position": "Long"
+        },
+        {
+            "symbol": "1000SATSUSDT",
+            "price": 1.75e-05,
+            "rsi": 40.91,
+            "price_change": -0.57,
+            "volume_change": -55.6,
+            "score": 6.05,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AUCTIONUSDT",
+            "price": 5.534,
+            "rsi": 18.77,
+            "price_change": 0.11,
+            "volume_change": -33.78,
+            "score": 4.48,
+            "position": "Long"
+        },
+        {
+            "symbol": "1000RATSUSDT",
+            "price": 0.05433,
+            "rsi": 86.99,
+            "price_change": 0.06,
+            "volume_change": -65.04,
+            "score": 0.15,
+            "position": "Short"
+        },
+        {
+            "symbol": "ACEUSDT",
+            "price": 0.2837,
+            "rsi": 56.97,
+            "price_change": -0.32,
+            "volume_change": -70.44,
+            "score": 5.25,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MOVRUSDT",
+            "price": 2.681,
+            "rsi": 46.09,
+            "price_change": -0.37,
+            "volume_change": -51.28,
+            "score": 7.72,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "NFPUSDT",
+            "price": 0.02638,
+            "rsi": 32.6,
+            "price_change": -0.19,
+            "volume_change": -42.2,
+            "score": 6.11,
+            "position": "Long"
+        },
+        {
+            "symbol": "AIUSDT",
+            "price": 0.04199,
+            "rsi": 36.09,
+            "price_change": -0.12,
+            "volume_change": -42.05,
+            "score": 6.89,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "XAIUSDT",
+            "price": 0.01743,
+            "rsi": 45.77,
+            "price_change": -0.34,
+            "volume_change": -54.45,
+            "score": 7.37,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "WIFUSDT",
+            "price": 0.3916,
+            "rsi": 29.14,
+            "price_change": -0.68,
+            "volume_change": 16.33,
+            "score": 10.78,
+            "position": "Long"
+        },
+        {
+            "symbol": "MANTAUSDT",
+            "price": 0.08088,
+            "rsi": 26.45,
+            "price_change": -0.16,
+            "volume_change": -67.89,
+            "score": 2.34,
+            "position": "Long"
+        },
+        {
+            "symbol": "ONDOUSDT",
+            "price": 0.4227,
+            "rsi": 23.08,
+            "price_change": -0.17,
+            "volume_change": 8.8,
+            "score": 9.33,
+            "position": "Long"
+        },
+        {
+            "symbol": "LSKUSDT",
+            "price": 0.2041,
+            "rsi": 26.37,
+            "price_change": -0.34,
+            "volume_change": -13.9,
+            "score": 7.54,
+            "position": "Long"
+        },
+        {
+            "symbol": "ALTUSDT",
+            "price": 0.01322,
+            "rsi": 44.12,
+            "price_change": 0.0,
+            "volume_change": -60.42,
+            "score": 6.78,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "JUPUSDT",
+            "price": 0.2164,
+            "rsi": 28.57,
+            "price_change": -0.05,
+            "volume_change": -49.11,
+            "score": 4.76,
+            "position": "Long"
+        },
+        {
+            "symbol": "ZETAUSDT",
+            "price": 0.0771,
+            "rsi": 36.77,
+            "price_change": -0.13,
+            "volume_change": -37.12,
+            "score": 7.51,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "RONINUSDT",
+            "price": 0.1416,
+            "rsi": 33.67,
+            "price_change": 0.0,
+            "volume_change": -57.92,
+            "score": 4.94,
+            "position": "Long"
+        },
+        {
+            "symbol": "DYMUSDT",
+            "price": 0.07322,
+            "rsi": 32.86,
+            "price_change": -0.45,
+            "volume_change": -35.78,
+            "score": 6.54,
+            "position": "Long"
+        },
+        {
+            "symbol": "OMUSDT",
+            "price": 0.08034,
+            "rsi": 43.46,
+            "price_change": 0.01,
+            "volume_change": -25.06,
+            "score": 10.2,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "PIXELUSDT",
+            "price": 0.00906,
+            "rsi": 35.63,
+            "price_change": -0.22,
+            "volume_change": -16.05,
+            "score": 9.3,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "STRKUSDT",
+            "price": 0.0872,
+            "rsi": 32.53,
+            "price_change": -0.34,
+            "volume_change": -38.33,
+            "score": 6.33,
+            "position": "Long"
+        },
+        {
+            "symbol": "GLMUSDT",
+            "price": 0.26961,
+            "rsi": 63.52,
+            "price_change": -0.09,
+            "volume_change": -57.25,
+            "score": 5.49,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "PORTALUSDT",
+            "price": 0.02268,
+            "rsi": 51.24,
+            "price_change": -0.48,
+            "volume_change": -50.94,
+            "score": 8.17,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TONUSDT",
+            "price": 1.8609,
+            "rsi": 47.9,
+            "price_change": -0.04,
+            "volume_change": -45.16,
+            "score": 9.02,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AXLUSDT",
+            "price": 0.0775,
+            "rsi": 31.88,
+            "price_change": -0.13,
+            "volume_change": -23.38,
+            "score": 7.91,
+            "position": "Long"
+        },
+        {
+            "symbol": "METISUSDT",
+            "price": 5.316,
+            "rsi": 34.15,
+            "price_change": -0.02,
+            "volume_change": 3.61,
+            "score": 11.17,
+            "position": "Long"
+        },
+        {
+            "symbol": "AEVOUSDT",
+            "price": 0.04191,
+            "rsi": 35.38,
+            "price_change": -0.14,
+            "volume_change": -65.69,
+            "score": 4.36,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "VANRYUSDT",
+            "price": 0.008525,
+            "rsi": 25.0,
+            "price_change": -0.06,
+            "volume_change": 39.51,
+            "score": 12.89,
+            "position": "Long"
+        },
+        {
+            "symbol": "BOMEUSDT",
+            "price": 0.0007836,
+            "rsi": 52.69,
+            "price_change": 0.44,
+            "volume_change": -47.69,
+            "score": 9.13,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ETHFIUSDT",
+            "price": 0.7602,
+            "rsi": 35.97,
+            "price_change": 0.2,
+            "volume_change": -46.12,
+            "score": 6.78,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ENAUSDT",
+            "price": 0.2373,
+            "rsi": 22.12,
+            "price_change": -0.08,
+            "volume_change": -39.67,
+            "score": 4.37,
+            "position": "Long"
+        },
+        {
+            "symbol": "WUSDT",
+            "price": 0.03759,
+            "rsi": 37.46,
+            "price_change": -0.16,
+            "volume_change": -24.64,
+            "score": 8.87,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TNSRUSDT",
+            "price": 0.07724,
+            "rsi": 28.88,
+            "price_change": -0.54,
+            "volume_change": -54.18,
+            "score": 3.82,
+            "position": "Long"
+        },
+        {
+            "symbol": "SAGAUSDT",
+            "price": 0.0614,
+            "rsi": 39.88,
+            "price_change": -0.16,
+            "volume_change": -50.5,
+            "score": 6.76,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TAOUSDT",
+            "price": 272.28,
+            "rsi": 34.71,
+            "price_change": -0.21,
+            "volume_change": -39.14,
+            "score": 6.82,
+            "position": "Long"
+        },
+        {
+            "symbol": "REZUSDT",
+            "price": 0.005399,
+            "rsi": 33.62,
+            "price_change": -0.35,
+            "volume_change": -78.78,
+            "score": 2.5,
+            "position": "Long"
+        },
+        {
+            "symbol": "BBUSDT",
+            "price": 0.06938,
+            "rsi": 50.65,
+            "price_change": 0.52,
+            "volume_change": -81.83,
+            "score": 6.21,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "NOTUSDT",
+            "price": 0.0006144,
+            "rsi": 45.43,
+            "price_change": -0.18,
+            "volume_change": -60.6,
+            "score": 6.85,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TURBOUSDT",
+            "price": 0.0019959,
+            "rsi": 38.09,
+            "price_change": -0.58,
+            "volume_change": 41.09,
+            "score": 15.15,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "IOUSDT",
+            "price": 0.1646,
+            "rsi": 33.18,
+            "price_change": -0.6,
+            "volume_change": -35.89,
+            "score": 6.44,
+            "position": "Long"
+        },
+        {
+            "symbol": "ZKUSDT",
+            "price": 0.03437,
+            "rsi": 45.34,
+            "price_change": -0.15,
+            "volume_change": -54.61,
+            "score": 7.46,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MEWUSDT",
+            "price": 0.001051,
+            "rsi": 41.38,
+            "price_change": 0.0,
+            "volume_change": -52.1,
+            "score": 7.07,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "LISTAUSDT",
+            "price": 0.1713,
+            "rsi": 29.52,
+            "price_change": -0.64,
+            "volume_change": -31.0,
+            "score": 6.17,
+            "position": "Long"
+        },
+        {
+            "symbol": "ZROUSDT",
+            "price": 1.41,
+            "rsi": 48.05,
+            "price_change": -0.27,
+            "volume_change": -59.11,
+            "score": 7.43,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "RENDERUSDT",
+            "price": 2.303,
+            "rsi": 48.1,
+            "price_change": 0.35,
+            "volume_change": 8.99,
+            "score": 14.87,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BANANAUSDT",
+            "price": 7.494,
+            "rsi": 44.62,
+            "price_change": -0.03,
+            "volume_change": -37.84,
+            "score": 9.11,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "RAREUSDT",
+            "price": 0.02303,
+            "rsi": 48.01,
+            "price_change": -1.58,
+            "volume_change": -60.71,
+            "score": 5.95,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "GUSDT",
+            "price": 0.004927,
+            "rsi": 53.72,
+            "price_change": 1.19,
+            "volume_change": -80.98,
+            "score": 6.35,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SYNUSDT",
+            "price": 0.05916,
+            "rsi": 47.95,
+            "price_change": -1.02,
+            "volume_change": 22.87,
+            "score": 14.86,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SYSUSDT",
+            "price": 0.02019,
+            "rsi": 39.31,
+            "price_change": -0.39,
+            "volume_change": -21.06,
+            "score": 9.36,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BRETTUSDT",
+            "price": 0.01799,
+            "rsi": 41.45,
+            "price_change": 0.06,
+            "volume_change": -61.06,
+            "score": 6.24,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "POPCATUSDT",
+            "price": 0.1059,
+            "rsi": 53.64,
+            "price_change": 1.24,
+            "volume_change": -43.27,
+            "score": 10.19,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SUNUSDT",
+            "price": 0.020393,
+            "rsi": 75.78,
+            "price_change": -0.09,
+            "volume_change": -49.18,
+            "score": 3.83,
+            "position": "Short"
+        },
+        {
+            "symbol": "DOGSUSDT",
+            "price": 4.73e-05,
+            "rsi": 35.09,
+            "price_change": -0.63,
+            "volume_change": -37.46,
+            "score": 6.64,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MBOXUSDT",
+            "price": 0.0328,
+            "rsi": 30.89,
+            "price_change": -0.39,
+            "volume_change": -41.15,
+            "score": 5.67,
+            "position": "Long"
+        },
+        {
+            "symbol": "CHESSUSDT",
+            "price": 0.03048,
+            "rsi": 42.27,
+            "price_change": -0.2,
+            "volume_change": -60.85,
+            "score": 6.17,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "FLUXUSDT",
+            "price": 0.1117,
+            "rsi": 36.63,
+            "price_change": -0.09,
+            "volume_change": -27.49,
+            "score": 8.49,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "RPLUSDT",
+            "price": 2.161,
+            "rsi": 40.15,
+            "price_change": -0.32,
+            "volume_change": -35.15,
+            "score": 8.19,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "POLUSDT",
+            "price": 0.12592,
+            "rsi": 48.59,
+            "price_change": 0.08,
+            "volume_change": -65.02,
+            "score": 7.3,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "1MBABYDOGEUSDT",
+            "price": 0.0007012,
+            "rsi": 39.09,
+            "price_change": -0.23,
+            "volume_change": -22.71,
+            "score": 9.32,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "NEIROUSDT",
+            "price": 0.0001398,
+            "rsi": 40.64,
+            "price_change": -0.21,
+            "volume_change": -24.33,
+            "score": 9.48,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "FIDAUSDT",
+            "price": 0.03675,
+            "rsi": 42.61,
+            "price_change": -0.24,
+            "volume_change": -50.72,
+            "score": 7.21,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "FIOUSDT",
+            "price": 0.0121,
+            "rsi": 61.97,
+            "price_change": 1.09,
+            "volume_change": 0.86,
+            "score": 12.78,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CATIUSDT",
+            "price": 0.0605,
+            "rsi": 50.72,
+            "price_change": -0.25,
+            "volume_change": -24.76,
+            "score": 11.13,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "GHSTUSDT",
+            "price": 0.1855,
+            "rsi": 40.0,
+            "price_change": -0.05,
+            "volume_change": -45.22,
+            "score": 7.42,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HMSTRUSDT",
+            "price": 0.0002414,
+            "rsi": 37.19,
+            "price_change": -0.41,
+            "volume_change": -24.55,
+            "score": 8.57,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "COSUSDT",
+            "price": 0.001369,
+            "rsi": 39.39,
+            "price_change": -0.07,
+            "volume_change": -62.28,
+            "score": 5.58,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "EIGENUSDT",
+            "price": 0.4117,
+            "rsi": 29.81,
+            "price_change": -0.84,
+            "volume_change": 60.24,
+            "score": 15.14,
+            "position": "Long"
+        },
+        {
+            "symbol": "DIAUSDT",
+            "price": 0.32,
+            "rsi": 46.13,
+            "price_change": -0.06,
+            "volume_change": -41.29,
+            "score": 9.03,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "1000CATUSDT",
+            "price": 0.003072,
+            "rsi": 33.86,
+            "price_change": -0.32,
+            "volume_change": -52.87,
+            "score": 5.16,
+            "position": "Long"
+        },
+        {
+            "symbol": "SCRUSDT",
+            "price": 0.07939,
+            "rsi": 37.66,
+            "price_change": -0.24,
+            "volume_change": -45.86,
+            "score": 6.71,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "GOATUSDT",
+            "price": 0.04031,
+            "rsi": 41.54,
+            "price_change": -0.05,
+            "volume_change": -62.8,
+            "score": 5.98,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MOODENGUSDT",
+            "price": 0.08459,
+            "rsi": 45.05,
+            "price_change": -0.08,
+            "volume_change": -25.67,
+            "score": 10.36,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SAFEUSDT",
+            "price": 0.1566,
+            "rsi": 33.57,
+            "price_change": -0.32,
+            "volume_change": -20.68,
+            "score": 8.33,
+            "position": "Long"
+        },
+        {
+            "symbol": "SANTOSUSDT",
+            "price": 1.751,
+            "rsi": 7.75,
+            "price_change": 0.11,
+            "volume_change": -37.48,
+            "score": 1.92,
+            "position": "Long"
+        },
+        {
+            "symbol": "COWUSDT",
+            "price": 0.2319,
+            "rsi": 39.49,
+            "price_change": -0.17,
+            "volume_change": -31.68,
+            "score": 8.56,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CETUSUSDT",
+            "price": 0.02776,
+            "rsi": 43.76,
+            "price_change": -0.64,
+            "volume_change": -71.15,
+            "score": 4.99,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "1000000MOGUSDT",
+            "price": 0.3402,
+            "rsi": 58.86,
+            "price_change": 0.98,
+            "volume_change": -37.3,
+            "score": 9.48,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "GRASSUSDT",
+            "price": 0.3295,
+            "rsi": 34.04,
+            "price_change": 0.09,
+            "volume_change": 3.26,
+            "score": 11.23,
+            "position": "Long"
+        },
+        {
+            "symbol": "DRIFTUSDT",
+            "price": 0.1666,
+            "rsi": 22.95,
+            "price_change": -0.12,
+            "volume_change": -52.6,
+            "score": 3.21,
+            "position": "Long"
+        },
+        {
+            "symbol": "ACTUSDT",
+            "price": 0.02551,
+            "rsi": 21.39,
+            "price_change": -1.28,
+            "volume_change": -11.57,
+            "score": 5.84,
+            "position": "Long"
+        },
+        {
+            "symbol": "PNUTUSDT",
+            "price": 0.08952,
+            "rsi": 40.68,
+            "price_change": 0.18,
+            "volume_change": -35.42,
+            "score": 8.77,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HIPPOUSDT",
+            "price": 0.001184,
+            "rsi": 38.26,
+            "price_change": 1.02,
+            "volume_change": -22.52,
+            "score": 10.42,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "DEGENUSDT",
+            "price": 0.001423,
+            "rsi": 45.79,
+            "price_change": 0.07,
+            "volume_change": -39.19,
+            "score": 9.31,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BANUSDT",
+            "price": 0.0743,
+            "rsi": 57.36,
+            "price_change": -0.55,
+            "volume_change": -47.47,
+            "score": 7.23,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AKTUSDT",
+            "price": 0.4215,
+            "rsi": 27.55,
+            "price_change": -0.94,
+            "volume_change": 24.63,
+            "score": 11.03,
+            "position": "Long"
+        },
+        {
+            "symbol": "SCRTUSDT",
+            "price": 0.1095,
+            "rsi": 38.36,
+            "price_change": -0.45,
+            "volume_change": -47.75,
+            "score": 6.44,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "1000CHEEMSUSDT",
+            "price": 0.0009875,
+            "rsi": 38.6,
+            "price_change": -0.17,
+            "volume_change": -41.34,
+            "score": 7.42,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "1000WHYUSDT",
+            "price": 1.82e-05,
+            "rsi": 44.44,
+            "price_change": 0.0,
+            "volume_change": 99.0,
+            "score": 22.79,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "THEUSDT",
+            "price": 0.2231,
+            "rsi": 48.92,
+            "price_change": 0.27,
+            "volume_change": -39.52,
+            "score": 10.1,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MORPHOUSDT",
+            "price": 1.2197,
+            "rsi": 35.61,
+            "price_change": -0.71,
+            "volume_change": -50.19,
+            "score": 5.4,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CHILLGUYUSDT",
+            "price": 0.02377,
+            "rsi": 37.0,
+            "price_change": 0.08,
+            "volume_change": -36.26,
+            "score": 7.86,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "KAIAUSDT",
+            "price": 0.06672,
+            "rsi": 30.57,
+            "price_change": 0.04,
+            "volume_change": -45.84,
+            "score": 5.57,
+            "position": "Long"
+        },
+        {
+            "symbol": "AEROUSDT",
+            "price": 0.564,
+            "rsi": 32.06,
+            "price_change": 0.25,
+            "volume_change": -52.2,
+            "score": 5.44,
+            "position": "Long"
+        },
+        {
+            "symbol": "ACXUSDT",
+            "price": 0.05351,
+            "rsi": 34.8,
+            "price_change": -0.5,
+            "volume_change": -51.27,
+            "score": 5.33,
+            "position": "Long"
+        },
+        {
+            "symbol": "ORCAUSDT",
+            "price": 1.183,
+            "rsi": 34.83,
+            "price_change": -0.25,
+            "volume_change": -70.71,
+            "score": 3.64,
+            "position": "Long"
+        },
+        {
+            "symbol": "MOVEUSDT",
+            "price": 0.03732,
+            "rsi": 37.53,
+            "price_change": -0.19,
+            "volume_change": -53.75,
+            "score": 5.94,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "RAYSOLUSDT",
+            "price": 1.177,
+            "rsi": 35.88,
+            "price_change": 0.56,
+            "volume_change": 6.28,
+            "score": 12.37,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "KOMAUSDT",
+            "price": 0.01119,
+            "rsi": 27.43,
+            "price_change": -0.09,
+            "volume_change": -47.17,
+            "score": 4.68,
+            "position": "Long"
+        },
+        {
+            "symbol": "VIRTUALUSDT",
+            "price": 1.0556,
+            "rsi": 21.21,
+            "price_change": -0.21,
+            "volume_change": -33.11,
+            "score": 4.72,
+            "position": "Long"
+        },
+        {
+            "symbol": "SPXUSDT",
+            "price": 0.6067,
+            "rsi": 49.72,
+            "price_change": 1.22,
+            "volume_change": -26.73,
+            "score": 12.49,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MEUSDT",
+            "price": 0.2212,
+            "rsi": 36.22,
+            "price_change": -0.36,
+            "volume_change": 17.76,
+            "score": 12.66,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AVAUSDT",
+            "price": 0.328,
+            "rsi": 39.36,
+            "price_change": -0.15,
+            "volume_change": -35.49,
+            "score": 8.17,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "DEGOUSDT",
+            "price": 0.521,
+            "rsi": 42.29,
+            "price_change": -0.23,
+            "volume_change": -7.83,
+            "score": 11.45,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "VELODROMEUSDT",
+            "price": 0.02374,
+            "rsi": 48.87,
+            "price_change": 0.17,
+            "volume_change": -26.61,
+            "score": 11.28,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MOCAUSDT",
+            "price": 0.02358,
+            "rsi": 42.13,
+            "price_change": -0.42,
+            "volume_change": -37.24,
+            "score": 8.28,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "VANAUSDT",
+            "price": 2.403,
+            "rsi": 38.2,
+            "price_change": -0.29,
+            "volume_change": -61.81,
+            "score": 5.17,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "PENGUUSDT",
+            "price": 0.012181,
+            "rsi": 31.35,
+            "price_change": -0.23,
+            "volume_change": -31.49,
+            "score": 6.89,
+            "position": "Long"
+        },
+        {
+            "symbol": "LUMIAUSDT",
+            "price": 0.1311,
+            "rsi": 30.08,
+            "price_change": 0.46,
+            "volume_change": -35.35,
+            "score": 6.94,
+            "position": "Long"
+        },
+        {
+            "symbol": "USUALUSDT",
+            "price": 0.02785,
+            "rsi": 41.73,
+            "price_change": -0.43,
+            "volume_change": -41.21,
+            "score": 7.8,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AIXBTUSDT",
+            "price": 0.03856,
+            "rsi": 24.43,
+            "price_change": -0.23,
+            "volume_change": -29.25,
+            "score": 5.73,
+            "position": "Long"
+        },
+        {
+            "symbol": "FARTCOINUSDT",
+            "price": 0.4295,
+            "rsi": 43.81,
+            "price_change": 0.63,
+            "volume_change": -35.31,
+            "score": 9.86,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "KMNOUSDT",
+            "price": 0.05815,
+            "rsi": 33.42,
+            "price_change": 0.03,
+            "volume_change": -64.67,
+            "score": 4.25,
+            "position": "Long"
+        },
+        {
+            "symbol": "CGPTUSDT",
+            "price": 0.03363,
+            "rsi": 35.05,
+            "price_change": -0.21,
+            "volume_change": -62.01,
+            "score": 4.6,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HIVEUSDT",
+            "price": 0.10493,
+            "rsi": 46.83,
+            "price_change": -0.39,
+            "volume_change": -72.15,
+            "score": 5.76,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "DEXEUSDT",
+            "price": 3.355,
+            "rsi": 29.49,
+            "price_change": -0.97,
+            "volume_change": -41.85,
+            "score": 4.74,
+            "position": "Long"
+        },
+        {
+            "symbol": "PHAUSDT",
+            "price": 0.0403,
+            "rsi": 43.99,
+            "price_change": -0.25,
+            "volume_change": -40.55,
+            "score": 8.5,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "DFUSDT",
+            "price": 0.012,
+            "rsi": 36.17,
+            "price_change": 0.0,
+            "volume_change": -72.83,
+            "score": 3.95,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "GRIFFAINUSDT",
+            "price": 0.0204,
+            "rsi": 37.25,
+            "price_change": -0.15,
+            "volume_change": 8.25,
+            "score": 12.13,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ZEREBROUSDT",
+            "price": 0.02732,
+            "rsi": 35.1,
+            "price_change": -1.16,
+            "volume_change": 6.03,
+            "score": 10.47,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BIOUSDT",
+            "price": 0.04756,
+            "rsi": 25.0,
+            "price_change": -0.27,
+            "volume_change": -49.78,
+            "score": 3.75,
+            "position": "Long"
+        },
+        {
+            "symbol": "COOKIEUSDT",
+            "price": 0.04503,
+            "rsi": 31.29,
+            "price_change": -0.27,
+            "volume_change": -56.19,
+            "score": 4.37,
+            "position": "Long"
+        },
+        {
+            "symbol": "ALCHUSDT",
+            "price": 0.11968,
+            "rsi": 25.92,
+            "price_change": -0.18,
+            "volume_change": -59.77,
+            "score": 3.03,
+            "position": "Long"
+        },
+        {
+            "symbol": "SWARMSUSDT",
+            "price": 0.0145,
+            "rsi": 38.25,
+            "price_change": -0.55,
+            "volume_change": -59.52,
+            "score": 5.15,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SONICUSDT",
+            "price": 0.08387,
+            "rsi": 46.52,
+            "price_change": -0.12,
+            "volume_change": -21.02,
+            "score": 11.08,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "DUSDT",
+            "price": 0.01324,
+            "rsi": 37.62,
+            "price_change": -0.3,
+            "volume_change": -40.28,
+            "score": 7.2,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "PROMUSDT",
+            "price": 6.728,
+            "rsi": 0.12,
+            "price_change": -1.39,
+            "volume_change": 9.6,
+            "score": 3.59,
+            "position": "Long"
+        },
+        {
+            "symbol": "SUSDT",
+            "price": 0.09224,
+            "rsi": 31.33,
+            "price_change": -0.58,
+            "volume_change": 56.29,
+            "score": 15.31,
+            "position": "Long"
+        },
+        {
+            "symbol": "SOLVUSDT",
+            "price": 0.01299,
+            "rsi": 30.38,
+            "price_change": -0.15,
+            "volume_change": -45.99,
+            "score": 5.32,
+            "position": "Long"
+        },
+        {
+            "symbol": "ARCUSDT",
+            "price": 0.03278,
+            "rsi": 26.71,
+            "price_change": -1.21,
+            "volume_change": 41.02,
+            "score": 12.24,
+            "position": "Long"
+        },
+        {
+            "symbol": "AVAAIUSDT",
+            "price": 0.00991,
+            "rsi": 20.51,
+            "price_change": -0.4,
+            "volume_change": 75.32,
+            "score": 15.23,
+            "position": "Long"
+        },
+        {
+            "symbol": "TRUMPUSDT",
+            "price": 5.388,
+            "rsi": 36.89,
+            "price_change": -0.17,
+            "volume_change": 17.89,
+            "score": 13.0,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MELANIAUSDT",
+            "price": 0.1466,
+            "rsi": 51.72,
+            "price_change": -1.94,
+            "volume_change": 143.13,
+            "score": 26.03,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "VTHOUSDT",
+            "price": 0.0008359,
+            "rsi": 40.69,
+            "price_change": -0.29,
+            "volume_change": -72.05,
+            "score": 4.65,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ANIMEUSDT",
+            "price": 0.007526,
+            "rsi": 22.07,
+            "price_change": 0.07,
+            "volume_change": -56.02,
+            "score": 2.88,
+            "position": "Long"
+        },
+        {
+            "symbol": "VINEUSDT",
+            "price": 0.03017,
+            "rsi": 35.02,
+            "price_change": -0.17,
+            "volume_change": -63.86,
+            "score": 4.45,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "PIPPINUSDT",
+            "price": 0.24856,
+            "rsi": 9.14,
+            "price_change": -7.41,
+            "volume_change": 196.17,
+            "score": 18.04,
+            "position": "Long"
+        },
+        {
+            "symbol": "VVVUSDT",
+            "price": 2.009,
+            "rsi": 39.84,
+            "price_change": -0.1,
+            "volume_change": -64.51,
+            "score": 5.42,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BERAUSDT",
+            "price": 0.6171,
+            "rsi": 40.15,
+            "price_change": -0.03,
+            "volume_change": -59.95,
+            "score": 6.0,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TSTUSDT",
+            "price": 0.01692,
+            "rsi": 23.01,
+            "price_change": -0.18,
+            "volume_change": -27.0,
+            "score": 5.73,
+            "position": "Long"
+        },
+        {
+            "symbol": "LAYERUSDT",
+            "price": 0.1771,
+            "rsi": 42.76,
+            "price_change": -0.23,
+            "volume_change": -18.35,
+            "score": 10.49,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HEIUSDT",
+            "price": 0.13,
+            "rsi": 48.62,
+            "price_change": -0.15,
+            "volume_change": -54.18,
+            "score": 8.15,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "B3USDT",
+            "price": 0.001016,
+            "rsi": 27.46,
+            "price_change": -1.26,
+            "volume_change": -55.18,
+            "score": 2.71,
+            "position": "Long"
+        },
+        {
+            "symbol": "IPUSDT",
+            "price": 2.022,
+            "rsi": 26.98,
+            "price_change": -0.74,
+            "volume_change": -68.44,
+            "score": 1.81,
+            "position": "Long"
+        },
+        {
+            "symbol": "GPSUSDT",
+            "price": 0.005966,
+            "rsi": 60.0,
+            "price_change": 0.22,
+            "volume_change": -67.79,
+            "score": 5.44,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SHELLUSDT",
+            "price": 0.04794,
+            "rsi": 16.24,
+            "price_change": -2.3,
+            "volume_change": 29.01,
+            "score": 7.85,
+            "position": "Long"
+        },
+        {
+            "symbol": "KAITOUSDT",
+            "price": 0.5547,
+            "rsi": 58.77,
+            "price_change": -1.18,
+            "volume_change": -46.65,
+            "score": 6.41,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "REDUSDT",
+            "price": 0.2451,
+            "rsi": 41.01,
+            "price_change": 0.04,
+            "volume_change": -66.0,
+            "score": 5.64,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "VICUSDT",
+            "price": 0.0958,
+            "rsi": 38.16,
+            "price_change": 0.0,
+            "volume_change": -21.53,
+            "score": 9.48,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "EPICUSDT",
+            "price": 0.8079,
+            "rsi": 34.57,
+            "price_change": -0.22,
+            "volume_change": -37.09,
+            "score": 6.98,
+            "position": "Long"
+        },
+        {
+            "symbol": "BMTUSDT",
+            "price": 0.02585,
+            "rsi": 37.85,
+            "price_change": -0.31,
+            "volume_change": -63.97,
+            "score": 4.87,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MUBARAKUSDT",
+            "price": 0.0194,
+            "rsi": 23.56,
+            "price_change": 0.05,
+            "volume_change": -33.89,
+            "score": 5.37,
+            "position": "Long"
+        },
+        {
+            "symbol": "FORMUSDT",
+            "price": 0.3618,
+            "rsi": 35.73,
+            "price_change": -0.33,
+            "volume_change": -68.56,
+            "score": 3.96,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BIDUSDT",
+            "price": 0.02978,
+            "rsi": 40.86,
+            "price_change": -0.3,
+            "volume_change": -57.8,
+            "score": 6.09,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TUTUSDT",
+            "price": 0.01693,
+            "rsi": 23.68,
+            "price_change": -0.41,
+            "volume_change": -29.47,
+            "score": 5.38,
+            "position": "Long"
+        },
+        {
+            "symbol": "BROCCOLI714USDT",
+            "price": 0.02939,
+            "rsi": 8.7,
+            "price_change": -1.64,
+            "volume_change": 13.79,
+            "score": 5.48,
+            "position": "Long"
+        },
+        {
+            "symbol": "BROCCOLIF3BUSDT",
+            "price": 0.00607,
+            "rsi": 21.55,
+            "price_change": -0.02,
+            "volume_change": -33.74,
+            "score": 4.92,
+            "position": "Long"
+        },
+        {
+            "symbol": "SIRENUSDT",
+            "price": 0.0892,
+            "rsi": 72.13,
+            "price_change": -0.11,
+            "volume_change": -32.72,
+            "score": 6.19,
+            "position": "Short"
+        },
+        {
+            "symbol": "BANANAS31USDT",
+            "price": 0.004094,
+            "rsi": 26.5,
+            "price_change": -0.51,
+            "volume_change": 92.25,
+            "score": 18.01,
+            "position": "Long"
+        },
+        {
+            "symbol": "BRUSDT",
+            "price": 0.05583,
+            "rsi": 25.05,
+            "price_change": -0.37,
+            "volume_change": -64.31,
+            "score": 2.21,
+            "position": "Long"
+        },
+        {
+            "symbol": "PLUMEUSDT",
+            "price": 0.01805,
+            "rsi": 32.02,
+            "price_change": -1.1,
+            "volume_change": 9.7,
+            "score": 10.28,
+            "position": "Long"
+        },
+        {
+            "symbol": "NILUSDT",
+            "price": 0.07142,
+            "rsi": 25.44,
+            "price_change": -0.36,
+            "volume_change": 6.57,
+            "score": 9.38,
+            "position": "Long"
+        },
+        {
+            "symbol": "PARTIUSDT",
+            "price": 0.10315,
+            "rsi": 34.13,
+            "price_change": 0.51,
+            "volume_change": -61.72,
+            "score": 5.16,
+            "position": "Long"
+        },
+        {
+            "symbol": "JELLYJELLYUSDT",
+            "price": 0.0672,
+            "rsi": 67.96,
+            "price_change": -0.36,
+            "volume_change": -58.99,
+            "score": 4.15,
+            "position": "Short"
+        },
+        {
+            "symbol": "MAVIAUSDT",
+            "price": 0.0627,
+            "rsi": 18.23,
+            "price_change": 0.45,
+            "volume_change": -69.35,
+            "score": 1.16,
+            "position": "Long"
+        },
+        {
+            "symbol": "PAXGUSDT",
+            "price": 4466.48,
+            "rsi": 50.26,
+            "price_change": 0.1,
+            "volume_change": -35.98,
+            "score": 10.45,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "WALUSDT",
+            "price": 0.1362,
+            "rsi": 32.43,
+            "price_change": -0.51,
+            "volume_change": -37.96,
+            "score": 6.18,
+            "position": "Long"
+        },
+        {
+            "symbol": "FUNUSDT",
+            "price": 0.002015,
+            "rsi": 52.38,
+            "price_change": -0.54,
+            "volume_change": 29.67,
+            "score": 15.95,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MLNUSDT",
+            "price": 5.012,
+            "rsi": 32.67,
+            "price_change": -0.08,
+            "volume_change": -66.54,
+            "score": 3.8,
+            "position": "Long"
+        },
+        {
+            "symbol": "GUNUSDT",
+            "price": 0.01941,
+            "rsi": 84.11,
+            "price_change": 1.15,
+            "volume_change": -57.36,
+            "score": 2.59,
+            "position": "Short"
+        },
+        {
+            "symbol": "ATHUSDT",
+            "price": 0.01064,
+            "rsi": 26.85,
+            "price_change": -0.28,
+            "volume_change": -13.01,
+            "score": 7.79,
+            "position": "Long"
+        },
+        {
+            "symbol": "BABYUSDT",
+            "price": 0.01892,
+            "rsi": 59.4,
+            "price_change": 0.8,
+            "volume_change": -47.27,
+            "score": 8.19,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "FORTHUSDT",
+            "price": 1.805,
+            "rsi": 35.35,
+            "price_change": -0.33,
+            "volume_change": -67.43,
+            "score": 4.0,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "PROMPTUSDT",
+            "price": 0.06095,
+            "rsi": 30.87,
+            "price_change": -0.07,
+            "volume_change": -51.04,
+            "score": 5.0,
+            "position": "Long"
+        },
+        {
+            "symbol": "STOUSDT",
+            "price": 0.07881,
+            "rsi": 43.07,
+            "price_change": 0.09,
+            "volume_change": -65.82,
+            "score": 6.12,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "FHEUSDT",
+            "price": 0.03951,
+            "rsi": 35.08,
+            "price_change": 0.56,
+            "volume_change": -69.6,
+            "score": 4.61,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "KERNELUSDT",
+            "price": 0.07731,
+            "rsi": 42.52,
+            "price_change": -0.55,
+            "volume_change": -0.77,
+            "score": 11.87,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "WCTUSDT",
+            "price": 0.08115,
+            "rsi": 42.04,
+            "price_change": -0.38,
+            "volume_change": -40.12,
+            "score": 8.02,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "INITUSDT",
+            "price": 0.093,
+            "rsi": 36.67,
+            "price_change": -0.21,
+            "volume_change": -48.28,
+            "score": 6.29,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AERGOUSDT",
+            "price": 0.06487,
+            "rsi": 29.63,
+            "price_change": -0.63,
+            "volume_change": -24.14,
+            "score": 6.88,
+            "position": "Long"
+        },
+        {
+            "symbol": "BANKUSDT",
+            "price": 0.04578,
+            "rsi": 38.82,
+            "price_change": -1.29,
+            "volume_change": 43.53,
+            "score": 14.82,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "EPTUSDT",
+            "price": 0.001791,
+            "rsi": 38.25,
+            "price_change": -0.61,
+            "volume_change": -38.48,
+            "score": 7.19,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "DEEPUSDT",
+            "price": 0.04354,
+            "rsi": 40.99,
+            "price_change": -0.73,
+            "volume_change": -50.3,
+            "score": 6.44,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HYPERUSDT",
+            "price": 0.1277,
+            "rsi": 43.37,
+            "price_change": -0.16,
+            "volume_change": -45.0,
+            "score": 8.02,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "JSTUSDT",
+            "price": 0.042873,
+            "rsi": 67.86,
+            "price_change": 0.08,
+            "volume_change": -40.33,
+            "score": 6.47,
+            "position": "Short"
+        },
+        {
+            "symbol": "SIGNUSDT",
+            "price": 0.03837,
+            "rsi": 53.21,
+            "price_change": -0.29,
+            "volume_change": -50.04,
+            "score": 8.07,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "PUNDIXUSDT",
+            "price": 0.2467,
+            "rsi": 30.0,
+            "price_change": 0.12,
+            "volume_change": -38.14,
+            "score": 6.31,
+            "position": "Long"
+        },
+        {
+            "symbol": "CTKUSDT",
+            "price": 0.3109,
+            "rsi": 58.79,
+            "price_change": 1.11,
+            "volume_change": -65.3,
+            "score": 6.82,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AIOTUSDT",
+            "price": 0.1069,
+            "rsi": 24.3,
+            "price_change": -1.29,
+            "volume_change": 80.87,
+            "score": 15.65,
+            "position": "Long"
+        },
+        {
+            "symbol": "DOLOUSDT",
+            "price": 0.04589,
+            "rsi": 32.53,
+            "price_change": -0.91,
+            "volume_change": 47.6,
+            "score": 14.36,
+            "position": "Long"
+        },
+        {
+            "symbol": "HAEDALUSDT",
+            "price": 0.04553,
+            "rsi": 41.05,
+            "price_change": -0.55,
+            "volume_change": -42.18,
+            "score": 7.45,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SXTUSDT",
+            "price": 0.027,
+            "rsi": 42.25,
+            "price_change": -0.3,
+            "volume_change": -54.5,
+            "score": 6.7,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ASRUSDT",
+            "price": 1.514,
+            "rsi": 20.69,
+            "price_change": -0.2,
+            "volume_change": -7.5,
+            "score": 7.19,
+            "position": "Long"
+        },
+        {
+            "symbol": "ALPINEUSDT",
+            "price": 0.5908,
+            "rsi": 24.74,
+            "price_change": -0.25,
+            "volume_change": 57.04,
+            "score": 14.4,
+            "position": "Long"
+        },
+        {
+            "symbol": "B2USDT",
+            "price": 0.7155,
+            "rsi": 44.37,
+            "price_change": -0.35,
+            "volume_change": -25.2,
+            "score": 10.01,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SYRUPUSDT",
+            "price": 0.36432,
+            "rsi": 35.57,
+            "price_change": 0.01,
+            "volume_change": -53.34,
+            "score": 5.79,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "DOODUSDT",
+            "price": 0.00593,
+            "rsi": 32.56,
+            "price_change": -0.12,
+            "volume_change": -48.41,
+            "score": 5.55,
+            "position": "Long"
+        },
+        {
+            "symbol": "OGUSDT",
+            "price": 4.287,
+            "rsi": 28.68,
+            "price_change": -0.37,
+            "volume_change": -35.88,
+            "score": 5.78,
+            "position": "Long"
+        },
+        {
+            "symbol": "ZKJUSDT",
+            "price": 0.04544,
+            "rsi": 52.68,
+            "price_change": -0.72,
+            "volume_change": -53.3,
+            "score": 7.41,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SKYAIUSDT",
+            "price": 0.04032,
+            "rsi": 65.65,
+            "price_change": 0.42,
+            "volume_change": -75.61,
+            "score": 3.73,
+            "position": "Short"
+        },
+        {
+            "symbol": "NXPCUSDT",
+            "price": 0.3868,
+            "rsi": 33.21,
+            "price_change": 0.05,
+            "volume_change": -68.02,
+            "score": 3.89,
+            "position": "Long"
+        },
+        {
+            "symbol": "CVCUSDT",
+            "price": 0.04633,
+            "rsi": 44.16,
+            "price_change": -0.6,
+            "volume_change": -42.07,
+            "score": 8.03,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AGTUSDT",
+            "price": 0.003507,
+            "rsi": 49.74,
+            "price_change": 0.09,
+            "volume_change": 598.89,
+            "score": 73.92,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AWEUSDT",
+            "price": 0.05721,
+            "rsi": 27.59,
+            "price_change": -0.03,
+            "volume_change": -20.95,
+            "score": 7.39,
+            "position": "Long"
+        },
+        {
+            "symbol": "BUSDT",
+            "price": 0.2373,
+            "rsi": 70.21,
+            "price_change": -0.92,
+            "volume_change": -38.68,
+            "score": 5.17,
+            "position": "Short"
+        },
+        {
+            "symbol": "SOONUSDT",
+            "price": 0.386,
+            "rsi": 51.32,
+            "price_change": -0.39,
+            "volume_change": -45.38,
+            "score": 8.81,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HUMAUSDT",
+            "price": 0.029731,
+            "rsi": 65.36,
+            "price_change": 0.73,
+            "volume_change": -37.03,
+            "score": 7.95,
+            "position": "Short"
+        },
+        {
+            "symbol": "AUSDT",
+            "price": 0.1782,
+            "rsi": 35.94,
+            "price_change": 0.17,
+            "volume_change": -68.26,
+            "score": 4.53,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SOPHUSDT",
+            "price": 0.013323,
+            "rsi": 44.78,
+            "price_change": -0.41,
+            "volume_change": -6.38,
+            "score": 11.91,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MERLUSDT",
+            "price": 0.24517,
+            "rsi": 42.56,
+            "price_change": -1.23,
+            "volume_change": -47.13,
+            "score": 6.57,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HYPEUSDT",
+            "price": 26.994,
+            "rsi": 42.04,
+            "price_change": 0.74,
+            "volume_change": -55.32,
+            "score": 7.61,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BDXNUSDT",
+            "price": 0.01702,
+            "rsi": 29.77,
+            "price_change": -3.19,
+            "volume_change": 678.44,
+            "score": 74.61,
+            "position": "Long"
+        },
+        {
+            "symbol": "PUFFERUSDT",
+            "price": 0.05786,
+            "rsi": 27.76,
+            "price_change": 0.4,
+            "volume_change": -13.56,
+            "score": 8.59,
+            "position": "Long"
+        },
+        {
+            "symbol": "1000000BOBUSDT",
+            "price": 0.02072,
+            "rsi": 26.06,
+            "price_change": -0.34,
+            "volume_change": -33.51,
+            "score": 5.52,
+            "position": "Long"
+        },
+        {
+            "symbol": "LAUSDT",
+            "price": 0.324,
+            "rsi": 35.08,
+            "price_change": -0.31,
+            "volume_change": -42.21,
+            "score": 6.49,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HOMEUSDT",
+            "price": 0.024222,
+            "rsi": 29.96,
+            "price_change": -0.01,
+            "volume_change": -75.46,
+            "score": 2.44,
+            "position": "Long"
+        },
+        {
+            "symbol": "RESOLVUSDT",
+            "price": 0.07484,
+            "rsi": 9.71,
+            "price_change": -0.07,
+            "volume_change": -22.14,
+            "score": 3.66,
+            "position": "Long"
+        },
+        {
+            "symbol": "TAIKOUSDT",
+            "price": 0.179,
+            "rsi": 34.35,
+            "price_change": 0.11,
+            "volume_change": -49.16,
+            "score": 6.07,
+            "position": "Long"
+        },
+        {
+            "symbol": "SQDUSDT",
+            "price": 0.07003,
+            "rsi": 43.28,
+            "price_change": -0.06,
+            "volume_change": -28.34,
+            "score": 9.77,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "PUMPBTCUSDT",
+            "price": 0.02907,
+            "rsi": 16.89,
+            "price_change": -0.41,
+            "volume_change": -10.28,
+            "score": 5.94,
+            "position": "Long"
+        },
+        {
+            "symbol": "SPKUSDT",
+            "price": 0.02576,
+            "rsi": 58.04,
+            "price_change": 0.12,
+            "volume_change": -72.35,
+            "score": 5.27,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MYXUSDT",
+            "price": 4.902,
+            "rsi": 52.96,
+            "price_change": 1.45,
+            "volume_change": -53.38,
+            "score": 9.52,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "FUSDT",
+            "price": 0.007055,
+            "rsi": 44.34,
+            "price_change": -0.28,
+            "volume_change": -76.79,
+            "score": 4.91,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "NEWTUSDT",
+            "price": 0.1032,
+            "rsi": 37.21,
+            "price_change": 0.0,
+            "volume_change": -52.11,
+            "score": 6.23,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "DMCUSDT",
+            "price": 0.001498,
+            "rsi": 47.7,
+            "price_change": 0.27,
+            "volume_change": -40.37,
+            "score": 9.77,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HUSDT",
+            "price": 0.1578,
+            "rsi": 54.66,
+            "price_change": -0.74,
+            "volume_change": -61.87,
+            "score": 6.15,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "OLUSDT",
+            "price": 0.01952,
+            "rsi": 43.63,
+            "price_change": 0.41,
+            "volume_change": -56.32,
+            "score": 7.51,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SAHARAUSDT",
+            "price": 0.02778,
+            "rsi": 30.88,
+            "price_change": -0.11,
+            "volume_change": -56.01,
+            "score": 4.47,
+            "position": "Long"
+        },
+        {
+            "symbol": "ICNTUSDT",
+            "price": 0.4139,
+            "rsi": 94.82,
+            "price_change": -0.43,
+            "volume_change": 34.35,
+            "score": 8.04,
+            "position": "Short"
+        },
+        {
+            "symbol": "BULLAUSDT",
+            "price": 0.03021,
+            "rsi": 63.61,
+            "price_change": -1.79,
+            "volume_change": -67.51,
+            "score": 2.74,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "IDOLUSDT",
+            "price": 0.02936,
+            "rsi": 28.44,
+            "price_change": -0.2,
+            "volume_change": -47.17,
+            "score": 4.77,
+            "position": "Long"
+        },
+        {
+            "symbol": "MUSDT",
+            "price": 1.6538,
+            "rsi": 48.81,
+            "price_change": -0.92,
+            "volume_change": -28.08,
+            "score": 10.03,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TANSSIUSDT",
+            "price": 0.01313,
+            "rsi": 32.35,
+            "price_change": -0.15,
+            "volume_change": -57.32,
+            "score": 4.59,
+            "position": "Long"
+        },
+        {
+            "symbol": "PUMPUSDT",
+            "price": 0.002344,
+            "rsi": 31.75,
+            "price_change": -0.09,
+            "volume_change": -20.13,
+            "score": 8.25,
+            "position": "Long"
+        },
+        {
+            "symbol": "CROSSUSDT",
+            "price": 0.13156,
+            "rsi": 50.18,
+            "price_change": -0.68,
+            "volume_change": 31.1,
+            "score": 16.39,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AINUSDT",
+            "price": 0.055,
+            "rsi": 44.22,
+            "price_change": -0.29,
+            "volume_change": -18.8,
+            "score": 10.67,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CUSDT",
+            "price": 0.08363,
+            "rsi": 29.76,
+            "price_change": 0.37,
+            "volume_change": -52.34,
+            "score": 5.09,
+            "position": "Long"
+        },
+        {
+            "symbol": "VELVETUSDT",
+            "price": 0.13812,
+            "rsi": 18.79,
+            "price_change": -0.37,
+            "volume_change": -13.04,
+            "score": 6.09,
+            "position": "Long"
+        },
+        {
+            "symbol": "TACUSDT",
+            "price": 0.004385,
+            "rsi": 46.49,
+            "price_change": 0.18,
+            "volume_change": -39.33,
+            "score": 9.55,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ERAUSDT",
+            "price": 0.2071,
+            "rsi": 45.08,
+            "price_change": -0.29,
+            "volume_change": -67.97,
+            "score": 5.93,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TAUSDT",
+            "price": 0.0346,
+            "rsi": 63.27,
+            "price_change": -0.72,
+            "volume_change": -46.5,
+            "score": 5.98,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CVXUSDT",
+            "price": 2.059,
+            "rsi": 31.35,
+            "price_change": 0.24,
+            "volume_change": -15.49,
+            "score": 8.96,
+            "position": "Long"
+        },
+        {
+            "symbol": "SLPUSDT",
+            "price": 0.0008546,
+            "rsi": 36.57,
+            "price_change": 0.01,
+            "volume_change": -28.47,
+            "score": 8.48,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ZORAUSDT",
+            "price": 0.04085,
+            "rsi": 31.27,
+            "price_change": 0.15,
+            "volume_change": -29.07,
+            "score": 7.49,
+            "position": "Long"
+        },
+        {
+            "symbol": "TAGUSDT",
+            "price": 0.0004747,
+            "rsi": 36.29,
+            "price_change": -0.29,
+            "volume_change": -34.52,
+            "score": 7.51,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ZRCUSDT",
+            "price": 0.003889,
+            "rsi": 21.91,
+            "price_change": -0.23,
+            "volume_change": -23.17,
+            "score": 5.84,
+            "position": "Long"
+        },
+        {
+            "symbol": "ESPORTSUSDT",
+            "price": 0.42526,
+            "rsi": 27.54,
+            "price_change": -1.16,
+            "volume_change": -30.8,
+            "score": 5.27,
+            "position": "Long"
+        },
+        {
+            "symbol": "TREEUSDT",
+            "price": 0.1119,
+            "rsi": 40.16,
+            "price_change": 0.09,
+            "volume_change": -57.06,
+            "score": 6.41,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "A2ZUSDT",
+            "price": 0.001673,
+            "rsi": 31.96,
+            "price_change": 0.84,
+            "volume_change": -56.31,
+            "score": 5.61,
+            "position": "Long"
+        },
+        {
+            "symbol": "PLAYUSDT",
+            "price": 0.0411,
+            "rsi": 19.43,
+            "price_change": -0.65,
+            "volume_change": -68.47,
+            "score": 0.39,
+            "position": "Long"
+        },
+        {
+            "symbol": "NAORISUSDT",
+            "price": 0.03884,
+            "rsi": 63.95,
+            "price_change": 0.31,
+            "volume_change": -33.95,
+            "score": 8.12,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TOWNSUSDT",
+            "price": 0.006299,
+            "rsi": 29.4,
+            "price_change": -0.16,
+            "volume_change": -10.27,
+            "score": 8.69,
+            "position": "Long"
+        },
+        {
+            "symbol": "PROVEUSDT",
+            "price": 0.4412,
+            "rsi": 39.78,
+            "price_change": 0.05,
+            "volume_change": -47.51,
+            "score": 7.25,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ALLUSDT",
+            "price": 0.6616,
+            "rsi": 35.24,
+            "price_change": -0.24,
+            "volume_change": -44.11,
+            "score": 6.4,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "INUSDT",
+            "price": 0.07472,
+            "rsi": 56.97,
+            "price_change": -0.35,
+            "volume_change": -7.28,
+            "score": 11.53,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "YALAUSDT",
+            "price": 0.02018,
+            "rsi": 27.88,
+            "price_change": -1.7,
+            "volume_change": 12.59,
+            "score": 9.13,
+            "position": "Long"
+        },
+        {
+            "symbol": "CARVUSDT",
+            "price": 0.1198,
+            "rsi": 47.83,
+            "price_change": 0.34,
+            "volume_change": -65.45,
+            "score": 7.35,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AIOUSDT",
+            "price": 0.11974,
+            "rsi": 55.93,
+            "price_change": 0.25,
+            "volume_change": -72.78,
+            "score": 5.79,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "XNYUSDT",
+            "price": 0.003565,
+            "rsi": 37.46,
+            "price_change": 1.39,
+            "volume_change": 56.83,
+            "score": 18.57,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "USELESSUSDT",
+            "price": 0.11545,
+            "rsi": 41.02,
+            "price_change": 1.12,
+            "volume_change": -38.11,
+            "score": 9.51,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "DAMUSDT",
+            "price": 0.02712,
+            "rsi": 41.29,
+            "price_change": -0.48,
+            "volume_change": -54.68,
+            "score": 6.31,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CUDISUSDT",
+            "price": 0.02986,
+            "rsi": 45.74,
+            "price_change": 0.27,
+            "volume_change": -58.72,
+            "score": 7.55,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SAPIENUSDT",
+            "price": 0.14738,
+            "rsi": 30.18,
+            "price_change": 0.2,
+            "volume_change": -64.8,
+            "score": 3.76,
+            "position": "Long"
+        },
+        {
+            "symbol": "XPLUSDT",
+            "price": 0.1779,
+            "rsi": 32.9,
+            "price_change": -1.77,
+            "volume_change": 113.92,
+            "score": 20.2,
+            "position": "Long"
+        },
+        {
+            "symbol": "WLFIUSDT",
+            "price": 0.1676,
+            "rsi": 41.1,
+            "price_change": -0.36,
+            "volume_change": -16.2,
+            "score": 10.24,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SOMIUSDT",
+            "price": 0.2625,
+            "rsi": 34.95,
+            "price_change": -0.46,
+            "volume_change": -39.31,
+            "score": 6.61,
+            "position": "Long"
+        },
+        {
+            "symbol": "BASUSDT",
+            "price": 0.005536,
+            "rsi": 59.02,
+            "price_change": 0.27,
+            "volume_change": -26.08,
+            "score": 9.86,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BTRUSDT",
+            "price": 0.03273,
+            "rsi": 25.93,
+            "price_change": -0.12,
+            "volume_change": 59.28,
+            "score": 14.99,
+            "position": "Long"
+        },
+        {
+            "symbol": "MITOUSDT",
+            "price": 0.06962,
+            "rsi": 54.85,
+            "price_change": -0.03,
+            "volume_change": -83.48,
+            "score": 4.65,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HEMIUSDT",
+            "price": 0.01829,
+            "rsi": 29.57,
+            "price_change": -0.11,
+            "volume_change": -72.91,
+            "score": 2.51,
+            "position": "Long"
+        },
+        {
+            "symbol": "LINEAUSDT",
+            "price": 0.007015,
+            "rsi": 33.45,
+            "price_change": 0.16,
+            "volume_change": -6.61,
+            "score": 10.19,
+            "position": "Long"
+        },
+        {
+            "symbol": "QUSDT",
+            "price": 0.017932,
+            "rsi": 63.33,
+            "price_change": 0.93,
+            "volume_change": -38.9,
+            "score": 8.37,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ARIAUSDT",
+            "price": 0.08161,
+            "rsi": 40.12,
+            "price_change": -0.04,
+            "volume_change": 5.51,
+            "score": 12.54,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TAKEUSDT",
+            "price": 0.08496,
+            "rsi": 40.37,
+            "price_change": -0.22,
+            "volume_change": -4.66,
+            "score": 11.38,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "PTBUSDT",
+            "price": 0.002635,
+            "rsi": 25.22,
+            "price_change": -9.08,
+            "volume_change": 629.67,
+            "score": 62.94,
+            "position": "Long"
+        },
+        {
+            "symbol": "OPENUSDT",
+            "price": 0.1761,
+            "rsi": 46.45,
+            "price_change": -0.06,
+            "volume_change": 23.61,
+            "score": 15.59,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "FLOCKUSDT",
+            "price": 0.094,
+            "rsi": 41.46,
+            "price_change": -0.32,
+            "volume_change": -52.23,
+            "score": 6.75,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SKYUSDT",
+            "price": 0.06139,
+            "rsi": 24.07,
+            "price_change": -0.57,
+            "volume_change": -11.36,
+            "score": 7.11,
+            "position": "Long"
+        },
+        {
+            "symbol": "AVNTUSDT",
+            "price": 0.3275,
+            "rsi": 31.79,
+            "price_change": -0.09,
+            "volume_change": -15.22,
+            "score": 8.74,
+            "position": "Long"
+        },
+        {
+            "symbol": "HOLOUSDT",
+            "price": 0.07679,
+            "rsi": 43.7,
+            "price_change": 0.31,
+            "volume_change": -39.52,
+            "score": 9.1,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "XPINUSDT",
+            "price": 0.002497,
+            "rsi": 29.49,
+            "price_change": -0.6,
+            "volume_change": -7.56,
+            "score": 8.54,
+            "position": "Long"
+        },
+        {
+            "symbol": "UBUSDT",
+            "price": 0.04162,
+            "rsi": 78.71,
+            "price_change": 2.64,
+            "volume_change": 725.36,
+            "score": 83.43,
+            "position": "Short"
+        },
+        {
+            "symbol": "ZKCUSDT",
+            "price": 0.1191,
+            "rsi": 46.47,
+            "price_change": -0.42,
+            "volume_change": -45.41,
+            "score": 8.34,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TOSHIUSDT",
+            "price": 0.0003548,
+            "rsi": 38.27,
+            "price_change": 0.31,
+            "volume_change": -49.28,
+            "score": 7.04,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "STBLUSDT",
+            "price": 0.06107,
+            "rsi": 35.59,
+            "price_change": -0.63,
+            "volume_change": 17.56,
+            "score": 12.24,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "0GUSDT",
+            "price": 0.9554,
+            "rsi": 56.46,
+            "price_change": 0.52,
+            "volume_change": -32.62,
+            "score": 9.96,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BARDUSDT",
+            "price": 0.8092,
+            "rsi": 40.27,
+            "price_change": 0.02,
+            "volume_change": 71.62,
+            "score": 19.24,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ASTERUSDT",
+            "price": 0.7412,
+            "rsi": 30.15,
+            "price_change": 0.04,
+            "volume_change": -37.84,
+            "score": 6.29,
+            "position": "Long"
+        },
+        {
+            "symbol": "TRADOORUSDT",
+            "price": 1.803,
+            "rsi": 57.09,
+            "price_change": 0.28,
+            "volume_change": 70.35,
+            "score": 19.9,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BLESSUSDT",
+            "price": 0.01369,
+            "rsi": 57.36,
+            "price_change": 0.88,
+            "volume_change": 13.98,
+            "score": 14.81,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "FLUIDUSDT",
+            "price": 2.999,
+            "rsi": 40.83,
+            "price_change": -0.13,
+            "volume_change": -43.63,
+            "score": 7.67,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "COAIUSDT",
+            "price": 0.413,
+            "rsi": 37.13,
+            "price_change": 0.02,
+            "volume_change": -12.1,
+            "score": 10.24,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "HANAUSDT",
+            "price": 0.0113,
+            "rsi": 37.58,
+            "price_change": -0.53,
+            "volume_change": -64.12,
+            "score": 4.58,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MIRAUSDT",
+            "price": 0.1475,
+            "rsi": 51.39,
+            "price_change": -0.61,
+            "volume_change": -60.12,
+            "score": 7.1,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "AKEUSDT",
+            "price": 0.000586,
+            "rsi": 86.39,
+            "price_change": 6.27,
+            "volume_change": 9.3,
+            "score": 13.93,
+            "position": "Short"
+        },
+        {
+            "symbol": "ORDERUSDT",
+            "price": 0.10209,
+            "rsi": 38.53,
+            "price_change": 0.14,
+            "volume_change": -40.91,
+            "score": 7.75,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "LIGHTUSDT",
+            "price": 0.6299,
+            "rsi": 59.68,
+            "price_change": -0.68,
+            "volume_change": -58.74,
+            "score": 5.51,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "XANUSDT",
+            "price": 0.01682,
+            "rsi": 26.95,
+            "price_change": 0.48,
+            "volume_change": -68.06,
+            "score": 3.06,
+            "position": "Long"
+        },
+        {
+            "symbol": "FFUSDT",
+            "price": 0.09179,
+            "rsi": 30.71,
+            "price_change": -0.17,
+            "volume_change": -26.57,
+            "score": 7.31,
+            "position": "Long"
+        },
+        {
+            "symbol": "VFYUSDT",
+            "price": 0.02921,
+            "rsi": 41.81,
+            "price_change": -0.54,
+            "volume_change": -51.11,
+            "score": 6.71,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "EDENUSDT",
+            "price": 0.06948,
+            "rsi": 47.96,
+            "price_change": 0.46,
+            "volume_change": -27.05,
+            "score": 11.35,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "NOMUSDT",
+            "price": 0.008283,
+            "rsi": 37.53,
+            "price_change": -0.13,
+            "volume_change": -42.98,
+            "score": 7.07,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TRUTHUSDT",
+            "price": 0.010717,
+            "rsi": 50.18,
+            "price_change": -2.27,
+            "volume_change": 54.02,
+            "score": 17.09,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "2ZUSDT",
+            "price": 0.11742,
+            "rsi": 27.74,
+            "price_change": 0.01,
+            "volume_change": -48.19,
+            "score": 4.74,
+            "position": "Long"
+        },
+        {
+            "symbol": "EVAAUSDT",
+            "price": 1.188,
+            "rsi": 35.33,
+            "price_change": -1.15,
+            "volume_change": -41.49,
+            "score": 5.77,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "LYNUSDT",
+            "price": 0.12195,
+            "rsi": 56.54,
+            "price_change": 2.32,
+            "volume_change": -21.26,
+            "score": 12.88,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "KGENUSDT",
+            "price": 0.2,
+            "rsi": 12.62,
+            "price_change": -0.07,
+            "volume_change": 118.86,
+            "score": 18.33,
+            "position": "Long"
+        },
+        {
+            "symbol": "4USDT",
+            "price": 0.02593,
+            "rsi": 45.59,
+            "price_change": 0.27,
+            "volume_change": -45.8,
+            "score": 8.81,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "GIGGLEUSDT",
+            "price": 64.22,
+            "rsi": 23.55,
+            "price_change": -0.56,
+            "volume_change": 130.24,
+            "score": 21.18,
+            "position": "Long"
+        },
+        {
+            "symbol": "MONUSDT",
+            "price": 0.02739,
+            "rsi": 45.61,
+            "price_change": 0.26,
+            "volume_change": -19.87,
+            "score": 11.39,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "YBUSDT",
+            "price": 0.4415,
+            "rsi": 55.91,
+            "price_change": 1.47,
+            "volume_change": 28.06,
+            "score": 17.1,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "METUSDT",
+            "price": 0.2757,
+            "rsi": 45.4,
+            "price_change": 0.18,
+            "volume_change": 9.33,
+            "score": 14.19,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "EULUSDT",
+            "price": 3.219,
+            "rsi": 39.26,
+            "price_change": -0.65,
+            "volume_change": -38.23,
+            "score": 7.38,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ENSOUSDT",
+            "price": 0.7216,
+            "rsi": 52.45,
+            "price_change": -0.58,
+            "volume_change": -61.18,
+            "score": 6.81,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CLOUSDT",
+            "price": 0.524,
+            "rsi": 36.52,
+            "price_change": -0.04,
+            "volume_change": -62.11,
+            "score": 5.05,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "RECALLUSDT",
+            "price": 0.1167,
+            "rsi": 46.37,
+            "price_change": -0.85,
+            "volume_change": -20.15,
+            "score": 10.41,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ZBTUSDT",
+            "price": 0.1257,
+            "rsi": 50.37,
+            "price_change": -0.24,
+            "volume_change": -26.02,
+            "score": 11.09,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "LABUSDT",
+            "price": 0.1302,
+            "rsi": 72.04,
+            "price_change": 0.05,
+            "volume_change": -49.83,
+            "score": 4.65,
+            "position": "Short"
+        },
+        {
+            "symbol": "RIVERUSDT",
+            "price": 16.87,
+            "rsi": 40.87,
+            "price_change": -1.19,
+            "volume_change": -82.79,
+            "score": 2.71,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "RVVUSDT",
+            "price": 0.00385,
+            "rsi": 24.02,
+            "price_change": -0.8,
+            "volume_change": -0.86,
+            "score": 7.92,
+            "position": "Long"
+        },
+        {
+            "symbol": "币安人生USDT",
+            "price": 0.14458,
+            "rsi": 55.41,
+            "price_change": 3.31,
+            "volume_change": -50.24,
+            "score": 11.2,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BLUAIUSDT",
+            "price": 0.004892,
+            "rsi": 34.57,
+            "price_change": -1.98,
+            "volume_change": -24.91,
+            "score": 6.44,
+            "position": "Long"
+        },
+        {
+            "symbol": "TURTLEUSDT",
+            "price": 0.06134,
+            "rsi": 27.77,
+            "price_change": -0.11,
+            "volume_change": -68.59,
+            "score": 2.58,
+            "position": "Long"
+        },
+        {
+            "symbol": "APRUSDT",
+            "price": 0.13513,
+            "rsi": 50.73,
+            "price_change": -2.74,
+            "volume_change": 153.48,
+            "score": 26.47,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ONUSDT",
+            "price": 0.10827,
+            "rsi": 58.5,
+            "price_change": 0.02,
+            "volume_change": -40.16,
+            "score": 8.3,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "42USDT",
+            "price": 0.04613,
+            "rsi": 39.23,
+            "price_change": -0.32,
+            "volume_change": -42.75,
+            "score": 7.25,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "COMMONUSDT",
+            "price": 0.003111,
+            "rsi": 47.07,
+            "price_change": 0.26,
+            "volume_change": 4.42,
+            "score": 14.11,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "KITEUSDT",
+            "price": 0.08997,
+            "rsi": 24.37,
+            "price_change": -0.27,
+            "volume_change": -16.55,
+            "score": 6.95,
+            "position": "Long"
+        },
+        {
+            "symbol": "ATUSDT",
+            "price": 0.15887,
+            "rsi": 46.22,
+            "price_change": -0.11,
+            "volume_change": -44.26,
+            "score": 8.71,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CCUSDT",
+            "price": 0.13678,
+            "rsi": 52.57,
+            "price_change": 0.89,
+            "volume_change": -3.18,
+            "score": 14.06,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MMTUSDT",
+            "price": 0.25,
+            "rsi": 53.62,
+            "price_change": 0.56,
+            "volume_change": -24.15,
+            "score": 11.42,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "TRUSTUSDT",
+            "price": 0.1157,
+            "rsi": 41.38,
+            "price_change": 0.09,
+            "volume_change": -38.65,
+            "score": 8.5,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "UAIUSDT",
+            "price": 0.1552,
+            "rsi": 35.0,
+            "price_change": -0.83,
+            "volume_change": -50.06,
+            "score": 5.16,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "FOLKSUSDT",
+            "price": 3.865,
+            "rsi": 58.87,
+            "price_change": 0.62,
+            "volume_change": -49.07,
+            "score": 7.94,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "STABLEUSDT",
+            "price": 0.014499,
+            "rsi": 30.11,
+            "price_change": -0.79,
+            "volume_change": -40.62,
+            "score": 5.17,
+            "position": "Long"
+        },
+        {
+            "symbol": "JCTUSDT",
+            "price": 0.002048,
+            "rsi": 24.24,
+            "price_change": -1.73,
+            "volume_change": 216.31,
+            "score": 28.75,
+            "position": "Long"
+        },
+        {
+            "symbol": "ALLOUSDT",
+            "price": 0.1152,
+            "rsi": 29.91,
+            "price_change": -0.35,
+            "volume_change": -64.89,
+            "score": 3.15,
+            "position": "Long"
+        },
+        {
+            "symbol": "CLANKERUSDT",
+            "price": 36.9,
+            "rsi": 31.67,
+            "price_change": 0.14,
+            "volume_change": 7.21,
+            "score": 11.19,
+            "position": "Long"
+        },
+        {
+            "symbol": "BEATUSDT",
+            "price": 0.5892,
+            "rsi": 55.87,
+            "price_change": -1.82,
+            "volume_change": -45.75,
+            "score": 6.44,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "PIEVERSEUSDT",
+            "price": 0.8643,
+            "rsi": 59.34,
+            "price_change": -0.79,
+            "volume_change": -74.9,
+            "score": 3.85,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "SENTUSDT",
+            "price": 0.04958,
+            "rsi": 35.18,
+            "price_change": -0.04,
+            "volume_change": 32.87,
+            "score": 14.28,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BOBUSDT",
+            "price": 0.01119,
+            "rsi": 26.57,
+            "price_change": -0.4,
+            "volume_change": -47.18,
+            "score": 4.2,
+            "position": "Long"
+        },
+        {
+            "symbol": "IRYSUSDT",
+            "price": 0.04462,
+            "rsi": 56.04,
+            "price_change": 0.3,
+            "volume_change": -59.51,
+            "score": 7.14,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "RLSUSDT",
+            "price": 0.01109,
+            "rsi": 57.68,
+            "price_change": -1.01,
+            "volume_change": -17.87,
+            "score": 9.67,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "POWERUSDT",
+            "price": 0.23291,
+            "rsi": 33.92,
+            "price_change": -0.32,
+            "volume_change": -54.9,
+            "score": 4.98,
+            "position": "Long"
+        },
+        {
+            "symbol": "WETUSDT",
+            "price": 0.17643,
+            "rsi": 46.67,
+            "price_change": -0.32,
+            "volume_change": -19.76,
+            "score": 11.04,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "NIGHTUSDT",
+            "price": 0.0797,
+            "rsi": 59.16,
+            "price_change": 0.37,
+            "volume_change": -36.51,
+            "score": 8.88,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "USUSDT",
+            "price": 0.00613,
+            "rsi": 42.19,
+            "price_change": -0.49,
+            "volume_change": 46.61,
+            "score": 16.61,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "CYSUSDT",
+            "price": 0.3616,
+            "rsi": 48.8,
+            "price_change": 0.5,
+            "volume_change": -55.37,
+            "score": 8.72,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "RAVEUSDT",
+            "price": 0.33305,
+            "rsi": 42.38,
+            "price_change": -0.89,
+            "volume_change": -36.96,
+            "score": 7.89,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "ZKPUSDT",
+            "price": 0.18615,
+            "rsi": 85.43,
+            "price_change": -0.92,
+            "volume_change": -61.3,
+            "score": -0.13,
+            "position": "Short"
+        },
+        {
+            "symbol": "GUAUSDT",
+            "price": 0.11602,
+            "rsi": 40.69,
+            "price_change": 0.15,
+            "volume_change": -17.18,
+            "score": 10.57,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "IRUSDT",
+            "price": 0.07919,
+            "rsi": 67.57,
+            "price_change": -1.12,
+            "volume_change": -56.81,
+            "score": 3.68,
+            "position": "Short"
+        },
+        {
+            "symbol": "LITUSDT",
+            "price": 2.996,
+            "rsi": 45.32,
+            "price_change": 1.9,
+            "volume_change": -19.26,
+            "score": 13.04,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "BREVUSDT",
+            "price": 0.4387,
+            "rsi": 37.36,
+            "price_change": -2.55,
+            "volume_change": -29.91,
+            "score": 5.93,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "COLLECTUSDT",
+            "price": 0.08675,
+            "rsi": 61.15,
+            "price_change": 0.85,
+            "volume_change": -53.64,
+            "score": 7.25,
+            "position": "Bekle"
+        },
+        {
+            "symbol": "MAGMAUSDT",
+            "price": 0.13798,
+            "rsi": 42.51,
+            "price_change": 0.97,
+            "volume_change": -38.39,
+            "score": 9.64,
+            "position": "Bekle"
+        }
+    ]
+}

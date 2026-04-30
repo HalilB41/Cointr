@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coin Analiz Paneli</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="user-bar">
+    <div id="user-menu">
+      <span id="username-display" class="user-email">Yükleniyor...</span>
+      <div id="dropdown-menu" class="dropdown hidden">
+        <div class="menu-item" id="menu-profile">👤 Profil</div>
+        <div class="menu-item" id="menu-favorites">⭐ Favoriler</div>
+        <div class="menu-item" id="menu-logout">🚪 Çıkış Yap</div>
+      </div>
+    </div>
+  </div>
+
+	<div class="container">
+    <h1>🪙 Coin Analiz Paneli</h1>
+
+        <div id="search-container" style="text-align:center; margin-bottom:20px;">
+      <input
+        type="text"
+        id="coinSearch"
+        placeholder="Coin ara (örnek: BTC, ETH, SOL...)"
+        style="padding:10px 15px; border-radius:8px; border:none; width:250px; background:#2d333b; color:#e6edf3;"
+      />
+      <p id="searchInfo" style="font-size:14px; color:#888; margin-top:5px;">
+        Arama boşsa tüm coinler gösterilir.
+      </p>
+    </div>
+
+	<button class="refresh-btn" id="analyzeBtn" style="margin-bottom: 20px;">⚡ Analizi Güncelle ve Yenile</button>
+	
+		<div id="lastUpdate" style="margin-bottom: 15px;">Son Güncelleme: <span id="lastUpdateText">Yükleniyor...</span></div>
+
+    <table id="coinTable">
+      <thead>
+        <tr>
+          <th>Favori</th>
+                <th class="th-coin">Coin</th>
+          <th class="th-price">Fiyat (USDT)</th> 
+          <th>RSI</th>
+          <th>Fiyat Değişimi (%)</th>
+          <th>Hacim Değişimi (%)</th>
+          <th>Skor</th>
+          <th>Yön (Tahmin)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+	<div id="general-modal" class="modal-backdrop">
+		<div class="message-box">
+			<h3 id="modal-title">Başlık</h3>
+			<p id="modal-content">İçerik buraya gelecek.</p>
+			<button class="modal-ok-btn" id="modal-ok-btn">Tamam</button>
+		</div>
+	</div>
+
+    <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
+    import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js";
+
+	// ====== MODAL FONKSİYONLARI (script.js tarafından kullanılmak üzere) ======
+	window.showModal = function(title, content) {
+		const modal = document.getElementById('general-modal');
+		document.getElementById('modal-title').textContent = title;
+		document.getElementById('modal-content').textContent = content;
+		modal.classList.add('show');
+		return new Promise(resolve => {
+			document.getElementById('modal-ok-btn').onclick = () => {
+				modal.classList.remove('show');
+				resolve();
+			};
+		});
+	}
+
+    // Firebase ayarları
+    const firebaseConfig = {
+      apiKey: "AIzaSyDdjLuOBNN9Ad8SEJuYE0gO0521-fqoX0g",
+      authDomain: "cointranaliz-802a1.firebaseapp.com",
+      projectId: "cointranaliz-802a1",
+      storageBucket: "cointranaliz-802a1.firebasestorage.app",
+      messagingSenderId: "716928043593",
+      appId: "1:716928043593:web:a196f1671c54f7bd594d98",
+      measurementId: "G-X2VZSSF1RC"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+	window.db = db; // Firestore'u script.js'e aktar
+
+	// Kullanıcı nesnesi ve menü elementleri
+    const usernameDisplay = document.getElementById("username-display");
+
+    // Giriş kontrolü
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+		window.currentUser = user; // Mevcut kullanıcıyı script.js'e aktar
+        loadUserData(user);
+      } else {
+        window.location.href = "login.html";
+      }
+    });
+
+    // Kullanıcı adını Firestore'dan yükleyen fonksiyon
+    async function loadUserData(user) {
+        try {
+            const docRef = doc(db, "users", user.uid);
+            const docSnap = await getDoc(docRef);
+            if (docSnap.exists() && docSnap.data().username) {
+                usernameDisplay.textContent = docSnap.data().username;
+            } else {
+                usernameDisplay.textContent = user.email;
+            }
+        } catch (error) {
+            console.error("Kullanıcı adı yüklenemedi:", error);
+            usernameDisplay.textContent = user.email;
+        }
+    }
+
+    // Menü davranışları
+    const dropdown = document.getElementById("dropdown-menu");
+    const emailEl = document.getElementById("username-display");
+    emailEl.addEventListener("click", () => { dropdown.classList.toggle("hidden"); });
+    window.addEventListener("click", (e) => { if (!e.target.closest("#user-menu")) dropdown.classList.add("hidden"); });
+
+    // Menü Linkleri
+    document.getElementById("menu-profile").addEventListener("click", () => { window.location.href = "profile.html"; });
+    document.getElementById("menu-logout").addEventListener("click", async () => {
+      await signOut(auth);
+      localStorage.removeItem("loggedInUser");
+      window.location.href = "login.html";
+    });
+
+	document.getElementById("menu-favorites").addEventListener("click", () => {
+		// Favori modu, script.js'de tanımlı
+		window.toggleFavoritesMode();
+	});
+  </script>
+
+  <script type="module" src="script.js"></script> 
+</body>
+</html>

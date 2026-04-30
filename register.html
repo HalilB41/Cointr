@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kayıt Ol</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Firebase SDK -->
+  <script type="module">
+    // Firebase modüllerini içe aktar
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
+
+    // Firebase yapılandırması
+    const firebaseConfig = {
+      apiKey: "AIzaSyDdjLuOBNN9Ad8SEJuYE0gO0521-fqoX0g",
+      authDomain: "cointranaliz-802a1.firebaseapp.com",
+      projectId: "cointranaliz-802a1",
+      storageBucket: "cointranaliz-802a1.firebasestorage.app",
+      messagingSenderId: "716928043593",
+      appId: "1:716928043593:web:a196f1671c54f7bd594d98",
+      measurementId: "G-X2VZSSF1RC"
+    };
+
+    // Firebase başlat
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    // DOM yüklendiğinde kayıt işlemini başlat
+    window.addEventListener("DOMContentLoaded", () => {
+      const btn = document.getElementById("registerBtn");
+      btn.addEventListener("click", async () => {
+        const username = document.getElementById("reg-username").value.trim();
+        const password = document.getElementById("reg-password").value.trim();
+
+        if (!username || !password) {
+          alert("⚠️ Lütfen kullanıcı adı (e-posta) ve şifre girin!");
+          return;
+        }
+
+        try {
+          // Firebase'de kullanıcı oluştur
+          await createUserWithEmailAndPassword(auth, username, password);
+          alert("✅ Kayıt başarılı! Ana sayfaya yönlendiriliyorsunuz...");
+          localStorage.setItem("loggedInUser", username);
+          window.location.href = "index.html";
+        } catch (error) {
+          console.error(error);
+          if (error.code === "auth/email-already-in-use") {
+            alert("⚠️ Bu e-posta zaten kayıtlı!");
+          } else if (error.code === "auth/invalid-email") {
+            alert("⚠️ Geçersiz e-posta formatı!");
+          } else if (error.code === "auth/weak-password") {
+            alert("⚠️ Şifre çok zayıf! En az 6 karakter olmalı.");
+          } else {
+            alert("❌ Bir hata oluştu: " + error.message);
+          }
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>📝 Kayıt Ol</h2>
+    <input type="email" id="reg-username" placeholder="E-posta" required />
+    <input type="password" id="reg-password" placeholder="Şifre (min. 6 karakter)" required />
+    <button id="registerBtn">Kayıt Ol</button>
+    <p>Zaten hesabın var mı? <a href="login.html">Giriş Yap</a></p>
+  </div>
+</body>
+</html>

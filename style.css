@@ -1,0 +1,602 @@
+/*
+ * GENEL STİL SIFIRLAMASI VE TEMEL AYARLAR
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Renk Paleti (Canlı ve Modern) */
+    --color-primary: #007BFF;       /* Canlı Mavi (Ana Vurgu) */
+    --color-secondary: #28A745;     /* Parlak Yeşil (Başarı/Long Pozisyon) */
+    --color-danger: #DC3545;        /* Kırmızı (Short/Hata/Çıkış) */
+    --color-background: #F4F7FA;    /* Çok Açık Mavi/Gri (Ana Arka Plan) */
+    --color-surface: #FFFFFF;       /* Beyaz (Kutu/Panel Arka Planı) */
+    --color-text-dark: #212529;     /* Koyu Gri/Siyah (Ana Yazı) */
+    --color-text-light: #6C757D;    /* Açık Gri (İkincil Yazı) */
+    --color-border: #E9ECEF;        /* Yumuşak Kenarlık */
+    --color-shadow: rgba(0, 0, 0, 0.1); /* Hafif Gölge */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--color-background);
+    color: var(--color-text-dark);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+ * ANA KONTEYNER VE YAPILANDIRMA (TABLO KUTUSU)
+ */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: var(--color-surface);
+    border-radius: 16px; /* Daha yumuşak köşeler */
+    padding: 30px;
+    box-shadow: 0 4px 15px var(--color-shadow);
+    flex-grow: 1; /* Ana içeriğin büyümesini sağlar */
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+/* 🔐 Giriş & Kayıt Butonları */
+.auth-buttons {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.btn-login,
+.btn-register {
+    background: var(--color-primary);
+    color: white; /* Vurgu butonda beyaz yazı */
+    padding: 10px 20px;
+    border-radius: 25px; /* Oval butonlar */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.btn-login:hover,
+.btn-register:hover {
+    background: #0056b3; /* Koyu Mavi */
+    transform: translateY(-2px); /* Hafif yükselme efekti */
+}
+
+/* 🔁 Yenileme ve Genel Buton Stilleri (Cüzdan butonu gizlidir) */
+.refresh-btn {
+    display: block;
+    margin: 0 auto 20px auto;
+    background: var(--color-secondary); /* Yeşil */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.4);
+}
+.refresh-btn:hover {
+    background: #1e7e34;
+    transform: scale(1.02);
+}
+
+/* 📅 Son Güncelleme yazısı */
+#lastUpdate {
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/*
+ * TABLO STİLLERİ
+ */
+table {
+    width: 100%;
+    border-collapse: separate; /* border-radius için */
+    border-spacing: 0; /* Hücreler arasında boşluk olmasın */
+    border-radius: 12px;
+    overflow: hidden; /* Köşeleri yuvarlamak için */
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid var(--color-border);
+}
+
+th {
+    background-color: var(--color-background); /* Tablo başlığı için açık gri ton */
+    color: var(--color-text-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #E9F0F7; /* Satır üzerine gelindiğinde çok açık mavi */
+    transition: 0.3s;
+}
+
+/* Son satırın alt çizgisini kaldır */
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Long/Short Pozisyon Renkleri */
+.long {
+    color: var(--color-secondary); /* Parlak Yeşil */
+    font-weight: bold;
+}
+
+.short {
+    color: var(--color-danger); /* Canlı Kırmızı */
+    font-weight: bold;
+}
+
+/* 🧱 Giriş & Kayıt Formları */
+.form-container {
+    background: var(--color-surface);
+    color: var(--color-text-dark);
+    width: 400px; /* Daha geniş form */
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.form-container h2 {
+    color: var(--color-primary);
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.form-container input {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: #F8F9FA; /* Hafif gölgeli giriş */
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.form-container input:focus {
+    outline: none;
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    background: var(--color-surface);
+}
+
+.form-container button {
+    background: var(--color-primary);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.form-container button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+.form-container a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+.form-container p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+}
+
+/* 👤 Kullanıcı barı */
+.user-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 30px;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+#username-display {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+#username-display:hover {
+    background-color: #F8F9FA;
+}
+
+#logout-btn {
+    background: var(--color-danger);
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#logout-btn:hover {
+    background: #C82333;
+}
+
+/* Dropdown */
+.dropdown {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--color-shadow);
+    width: 180px;
+    z-index: 1000;
+    overflow: hidden;
+}
+.dropdown.hidden { display: none; }
+
+.menu-item {
+    padding: 12px;
+    text-align: left;
+    color: var(--color-text-dark);
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: 0.2s;
+}
+.menu-item:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* ====== PROFİL SAYFASI STİLLERİ ====== */
+
+.profile-container, .profile-view-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: var(--color-surface);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 15px var(--color-shadow);
+}
+
+.profile-container h2 {
+    font-size: 1.5rem;
+    color: var(--color-text-dark);
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+/* Form Alanları */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    background: #F8F9FA;
+    color: var(--color-text-dark);
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    background: var(--color-surface);
+}
+
+.form-group input:disabled {
+    background: var(--color-background);
+    color: var(--color-text-light);
+    cursor: not-allowed;
+}
+
+.form-group textarea {
+    resize: vertical;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-save {
+    background: var(--color-secondary); /* Kayıt butonu için yeşil renk */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+.btn-save:hover {
+    background: #1e7e34;
+    transform: translateY(-2px);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: 40px 0;
+}
+
+/* ====== YENİ PROFİL GÖRÜNÜM SAYFASI STİLLERİ ====== */
+
+/* "Profili Düzenle" butonu için başlık alanı */
+.profile-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.btn-edit-profile {
+    background: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.btn-edit-profile:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+.profile-view-username {
+    font-size: 2rem;
+    color: var(--color-text-dark);
+    margin: 0;
+    text-align: left;
+}
+
+.profile-view-email {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.profile-view-bio {
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    line-height: 1.7;
+    text-align: left;
+    padding: 15px;
+    background: #F8F9FA;
+    border-radius: 8px;
+    border-left: 4px solid var(--color-primary);
+    white-space: pre-wrap;
+}
+
+/* ====== COIN LOGO VE TABLO HİZALAMASI STİLLERİ (GÜNCELLENDİ) ====== */
+
+th.th-coin {
+    text-align: left;
+    padding-left: 53px;
+}
+
+.coin-cell-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 15px;
+    height: 100%;
+}
+
+.coin-logo {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--color-border);
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.coin-symbol {
+    font-weight: bold;
+    color: var(--color-text-dark); /* Koyu arka planda kaybolmasın */
+}
+
+/* --- DİĞER HÜCRELERİN HİZALAMASINI DÜZELT --- */
+
+#coinTable tbody td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#coinTable tbody td:nth-child(2) {
+    text-align: left;
+    padding: 0;
+}
+
+#coinTable tbody td.fav-cell {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* ====== MODAL/MESAJ KUTUSU STİLLERİ (Alert Yerine) ====== */
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal-backdrop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.message-box {
+    background: var(--color-surface);
+    color: var(--color-text-dark);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-out;
+}
+
+.modal-backdrop.show .message-box {
+    transform: scale(1);
+}
+
+.message-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--color-primary); /* Başlık rengi */
+}
+
+.message-box p {
+    margin-bottom: 25px;
+    font-size: 1rem;
+    color: var(--color-text-light);
+}
+
+.modal-ok-btn {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.modal-ok-btn:hover {
+    background: #0056b3;
+}
+
+/*... mevcut stil kodlarınız ...*/
+
+/* ====== BUTONLAR (GİRİŞ/KAYIT DIŞINDAKİ) ====== */
+
+.refresh-btn,
+.modal-ok-btn,
+.btn-edit-profile,
+.btn-save-profile,
+.btn-change-password { /* Yeni Buton */
+  background: #00ffa2; /* Canlı yeşil ton */
+  color: #0d1117;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.1s;
+  text-decoration: none; /* Linkler için */
+  display: inline-block; /* Linkler için */
+}
+
+.refresh-btn:hover,
+.modal-ok-btn:hover,
+.btn-edit-profile:hover,
+.btn-save-profile:hover,
+.btn-change-password:hover {
+  background: #00e090;
+}
+
+.refresh-btn:active,
+.modal-ok-btn:active,
+.btn-edit-profile:active,
+.btn-save-profile:active,
+.btn-change-password:active {
+  transform: scale(0.98);
+}
+
+.refresh-btn:disabled {
+    background: #505050;
+    cursor: not-allowed;
+    color: #a0a0a0;
+}
+

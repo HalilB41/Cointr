@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profilim - Coin Analiz</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="user-bar">
+        <div id="user-menu">
+          <span id="username-display" class="user-email">Yükleniyor...</span>
+          <div id="dropdown-menu" class="dropdown hidden">
+            <div class="menu-item" id="menu-dashboard">📊 Panel</div>
+            <div class="menu-item" id="menu-profile">👤 Profil</div>
+            <div class="menu-item" id="menu-favorites">⭐ Favoriler</div>
+            <div class="menu-item" id="menu-logout">🚪 Çıkış Yap</div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container profile-view-container">
+        
+        <div class="profile-header">
+            <a href="edit-profile.html" class="btn-edit-profile">Profili Düzenle</a>
+        </div>
+
+        <h1 id="view-username" class="profile-view-username">Kullanıcı Adı Yükleniyor...</h1>
+        
+        <span id="view-email" class="profile-view-email">email@yukleniyor.com</span>
+
+        <p id="view-bio" class="profile-view-bio">
+            Açıklama yükleniyor...
+        </p>
+
+    </div>
+
+    <script type="module" src="profile.js"></script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+        import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDdjLuOBNN9Ad8SEJuYE0gO0521-fqoX0g",
+            authDomain: "cointranaliz-802a1.firebaseapp.com",
+            projectId: "cointranaliz-802a1",
+            storageBucket: "cointranaliz-802a1.firebasestorage.app",
+            messagingSenderId: "716928043593",
+            appId: "1:716928043593:web:a196f1671c54f7bd594d98"
+        };
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        onAuthStateChanged(auth, (user) => {
+            if (!user) {
+                window.location.href = "login.html";
+            }
+        });
+        
+        // Dropdown menü
+        const dropdown = document.getElementById("dropdown-menu");
+        const emailEl = document.getElementById("username-display");
+        emailEl.addEventListener("click", () => dropdown.classList.toggle("hidden"));
+        window.addEventListener("click", (e) => {
+            if (!e.target.closest("#user-menu")) dropdown.classList.add("hidden");
+        });
+
+        // Menü linkleri
+        document.getElementById("menu-dashboard").addEventListener("click", () => window.location.href = "index.html");
+        document.getElementById("menu-profile").addEventListener("click", () => window.location.href = "profile.html");
+        document.getElementById("menu-favorites").addEventListener("click", () => window.location.href = "index.html"); 
+        document.getElementById("menu-logout").addEventListener("click", async () => {
+            await signOut(auth);
+            localStorage.removeItem("loggedInUser");
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>

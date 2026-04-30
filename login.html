@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giriş Yap</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase Authentication -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
+
+    // 🔧 Firebase yapılandırması (senin projen)
+    const firebaseConfig = {
+      apiKey: "AIzaSyDdjLuOBNN9Ad8SEJuYE0gO0521-fqoX0g",
+      authDomain: "cointranaliz-802a1.firebaseapp.com",
+      projectId: "cointranaliz-802a1",
+      storageBucket: "cointranaliz-802a1.firebasestorage.app",
+      messagingSenderId: "716928043593",
+      appId: "1:716928043593:web:a196f1671c54f7bd594d98",
+      measurementId: "G-X2VZSSF1RC"
+    };
+
+    // 🔥 Firebase başlat
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    // 🚪 Giriş işlemi
+    window.login = async function() {
+      const username = document.getElementById("login-username").value.trim();
+      const password = document.getElementById("login-password").value.trim();
+
+      if (!username || !password) {
+        alert("⚠️ Lütfen e-posta ve şifre girin!");
+        return;
+      }
+
+      try {
+        // Firebase giriş isteği
+        await signInWithEmailAndPassword(auth, username, password);
+        alert("✅ Giriş başarılı! Ana sayfaya yönlendiriliyorsunuz...");
+        localStorage.setItem("loggedInUser", username);
+        window.location.href = "index.html";
+      } catch (error) {
+        console.error(error);
+        if (error.code === "auth/user-not-found") {
+          alert("❌ Bu kullanıcı bulunamadı!");
+        } else if (error.code === "auth/wrong-password") {
+          alert("❌ Şifre hatalı!");
+        } else if (error.code === "auth/invalid-email") {
+          alert("⚠️ Geçersiz e-posta formatı!");
+        } else {
+          alert("❌ Giriş başarısız: " + error.message);
+        }
+      }
+    };
+  </script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>🔐 Giriş Yap</h2>
+    <input type="email" id="login-username" placeholder="E-posta" required>
+    <input type="password" id="login-password" placeholder="Şifre" required>
+    <button onclick="login()">Giriş Yap</button>
+    <p>Hesabın yok mu? <a href="register.html">Kayıt Ol</a></p>
+  </div>
+</body>
+</html>
