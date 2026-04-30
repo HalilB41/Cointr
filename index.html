@@ -1,151 +1,123 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coin Analiz Paneli</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Portföy & Kripto Sohbet</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="user-bar">
-    <div id="user-menu">
-      <span id="username-display" class="user-email">Yükleniyor...</span>
-      <div id="dropdown-menu" class="dropdown hidden">
-        <div class="menu-item" id="menu-profile">👤 Profil</div>
-        <div class="menu-item" id="menu-favorites">⭐ Favoriler</div>
-        <div class="menu-item" id="menu-logout">🚪 Çıkış Yap</div>
-      </div>
-    </div>
-  </div>
+  <!-- Üst Menü -->
+  <div class="navbar">
+    <div class="logo" id="nav-logo" style="cursor: pointer;">🚀 Kripto & Hisse Portföy</div>
+    <div id="auth-section">
+      <button id="nav-login">Giriş / Kayıt</button>
+      <div id="user-menu" class="hidden">
+        <span id="username-display"></span>
+        <div id="dropdown-menu" class="dropdown hidden">
+          <div class="menu-item" id="menu-home">🏠 Ana Sayfa</div>
+          <div class="menu-item" id="menu-profile-edit">⚙️ Profili Düzenle</div>
+          <div class="menu-item" id="admin-panel-btn" class="hidden" style="color: red;">🛡️ Admin</div>
+          <div class="menu-item" id="menu-logout">🚪 Çıkış Yap</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<div class="container">
-    <h1>🪙 Coin Analiz Paneli</h1>
+  <!-- BÖLÜM 1: ANA SAYFA (Portföy, Piyasa, Sohbet) -->
+  <div id="home-section" class="main-layout">
+    <div class="portfolio-section panel">
+      <h2>💼 Sepetim (Portföy)</h2>
+      <div id="portfolio-form" class="hidden">
+        <input type="text" id="asset-name" placeholder="Coin (Örn: BTCUSDT)">
+        <input type="number" id="asset-amount" placeholder="Miktar (Adet)">
+        <input type="number" id="asset-buy-price" placeholder="Alış Fiyatı ($)">
+        <button id="add-asset-btn">Sepete Ekle</button>
+      </div>
+      <p id="guest-portfolio-msg" style="color: var(--text-muted);">Portföy oluşturmak için giriş yapmalısınız.</p>
+      
+      <div class="portfolio-summary">
+        <h3>Toplam Kar/Zarar: <span id="total-pnl">0.00$</span></h3>
+      </div>
+      <table id="portfolio-table">
+        <thead>
+          <tr><th>Varlık</th><th>Miktar</th><th>Alış</th><th>Güncel</th><th>K/Z</th></tr>
+        </thead>
+        <tbody id="portfolio-body"></tbody>
+      </table>
+    </div>
 
-        <div id="search-container" style="text-align:center; margin-bottom:20px;">
-      <input
-        type="text"
-        id="coinSearch"
-        placeholder="Coin ara (örnek: BTC, ETH, SOL...)"
-        style="padding:10px 15px; border-radius:8px; border:none; width:250px; background:#2d333b; color:#e6edf3;"
-      />
-      <p id="searchInfo" style="font-size:14px; color:#888; margin-top:5px;">
-        Arama boşsa tüm coinler gösterilir.
-      </p>
-    </div>
+    <div class="market-section panel">
+      <h2>📈 Canlı Piyasalar</h2>
+      <input type="text" id="market-search" placeholder="Coin Ara...">
+      <div class="market-list" id="market-list"></div>
+    </div>
 
-	<button class="refresh-btn" id="analyzeBtn" style="margin-bottom: 20px;">⚡ Analizi Güncelle ve Yenile</button>
-	
-		<div id="lastUpdate" style="margin-bottom: 15px;">Son Güncelleme: <span id="lastUpdateText">Yükleniyor...</span></div>
+    <div class="chat-section panel">
+      <h2>💬 Kripto Sohbet</h2>
+      <div id="chat-box" class="chat-box"></div>
+      <div class="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Mesajınızı yazın..." disabled>
+        <button id="chat-send" disabled>Gönder</button>
+      </div>
+    </div>
+  </div>
 
-    <table id="coinTable">
-      <thead>
-        <tr>
-          <th>Favori</th>
-                <th class="th-coin">Coin</th>
-          <th class="th-price">Fiyat (USDT)</th> 
-          <th>RSI</th>
-          <th>Fiyat Değişimi (%)</th>
-          <th>Hacim Değişimi (%)</th>
-          <th>Skor</th>
-          <th>Yön (Tahmin)</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
+  <!-- BÖLÜM 2: PROFİL DÜZENLEME EKRANI (Gizli Bölme) -->
+  <div id="edit-profile-section" class="panel hidden" style="max-width: 600px; margin: 40px auto;">
+    <h2>⚙️ Profili Düzenle</h2>
+    <form id="profile-form">
+      <div class="form-group"><label>E-posta (Değiştirilemez)</label><input type="email" id="profile-email" disabled /></div>
+      <div class="form-group"><label>Kullanıcı Adı</label><input type="text" id="profile-username" placeholder="Görünen adınız..." /></div>
+      <div class="form-group"><label>Açıklama (Bio)</label><textarea id="profile-bio" rows="4" placeholder="Kendinden bahset..."></textarea></div>
+      <button type="submit" class="btn-save" id="btn-save-profile">Profili Kaydet</button>
+    </form>
+    <hr>
+    <form id="password-form">
+      <h2>🔐 Şifre Değiştir</h2>
+      <div class="form-group"><input type="password" id="new-password" placeholder="Yeni Şifre (En az 6 karakter)" /></div>
+      <button type="submit" class="btn-save" id="btn-save-password">Şifreyi Güncelle</button>
+    </form>
+  </div>
 
-	<div id="general-modal" class="modal-backdrop">
-		<div class="message-box">
-			<h3 id="modal-title">Başlık</h3>
-			<p id="modal-content">İçerik buraya gelecek.</p>
-			<button class="modal-ok-btn" id="modal-ok-btn">Tamam</button>
-		</div>
-	</div>
+  <!-- BÖLÜM 3: GİRİŞ VE KAYIT EKRANI (Gizli Bölme) -->
+  <div id="auth-page-section" class="panel hidden" style="max-width: 400px; margin: 50px auto; text-align: center;">
+    
+    <!-- Giriş Yap Kutusu -->
+    <div id="login-box">
+      <h2 style="margin-bottom: 20px;">🔐 Giriş Yap</h2>
+      <div class="form-group"><input type="email" id="login-email" placeholder="E-posta"></div>
+      <div class="form-group"><input type="password" id="login-password" placeholder="Şifre"></div>
+      <button id="btn-login-submit" style="width: 100%; margin-bottom: 15px;">Giriş Yap</button>
+      <p style="color: var(--text-muted);">Hesabın yok mu? <a href="#" id="toggle-to-register" style="color: var(--accent-blue); text-decoration: none; font-weight: bold;">Kayıt Ol</a></p>
+    </div>
 
-    <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
-    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
-    import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js";
+    <!-- Kayıt Ol Kutusu -->
+    <div id="register-box" class="hidden">
+      <h2 style="margin-bottom: 20px;">📝 Kayıt Ol</h2>
+      <div class="form-group"><input type="text" id="reg-username" placeholder="Kullanıcı Adı (Zorunlu)"></div>
+      <div class="form-group"><input type="email" id="reg-email" placeholder="E-posta"></div>
+      <div class="form-group"><input type="password" id="reg-password" placeholder="Şifre (min. 6)"></div>
+      <button id="btn-register-submit" style="width: 100%; margin-bottom: 15px;">Aramıza Katıl</button>
+      <p style="color: var(--text-muted);">Hesabın var mı? <a href="#" id="toggle-to-login" style="color: var(--accent-blue); text-decoration: none; font-weight: bold;">Giriş Yap</a></p>
+    </div>
+  </div>
 
-	// ====== MODAL FONKSİYONLARI (script.js tarafından kullanılmak üzere) ======
-	window.showModal = function(title, content) {
-		const modal = document.getElementById('general-modal');
-		document.getElementById('modal-title').textContent = title;
-		document.getElementById('modal-content').textContent = content;
-		modal.classList.add('show');
-		return new Promise(resolve => {
-			document.getElementById('modal-ok-btn').onclick = () => {
-				modal.classList.remove('show');
-				resolve();
-			};
-		});
-	}
+  <!-- BÖLÜM 4: BAŞKA KULLANICI PROFİLİ GÖRÜNTÜLEME MODALI -->
+  <div id="profile-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 id="modal-username">Kullanıcı Adı</h2>
+      <p id="modal-bio">Biyografi yükleniyor...</p>
+      <h3>💼 Portföyü</h3>
+      <ul id="modal-portfolio-list"></ul>
+    </div>
+  </div>
 
-    // Firebase ayarları
-    const firebaseConfig = {
-      apiKey: "AIzaSyDdjLuOBNN9Ad8SEJuYE0gO0521-fqoX0g",
-      authDomain: "cointranaliz-802a1.firebaseapp.com",
-      projectId: "cointranaliz-802a1",
-      storageBucket: "cointranaliz-802a1.firebasestorage.app",
-      messagingSenderId: "716928043593",
-      appId: "1:716928043593:web:a196f1671c54f7bd594d98",
-      measurementId: "G-X2VZSSF1RC"
-    };
+  <!-- Reklam Alanı -->
+  <div class="ad-banner">
+    <p>Sponsorlu Bağlantı - Reklam Alanı</p>
+  </div>
 
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-    const db = getFirestore(app);
-	window.db = db; // Firestore'u script.js'e aktar
-
-	// Kullanıcı nesnesi ve menü elementleri
-    const usernameDisplay = document.getElementById("username-display");
-
-    // Giriş kontrolü
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-		window.currentUser = user; // Mevcut kullanıcıyı script.js'e aktar
-        loadUserData(user);
-      } else {
-        window.location.href = "login.html";
-      }
-    });
-
-    // Kullanıcı adını Firestore'dan yükleyen fonksiyon
-    async function loadUserData(user) {
-        try {
-            const docRef = doc(db, "users", user.uid);
-            const docSnap = await getDoc(docRef);
-            if (docSnap.exists() && docSnap.data().username) {
-                usernameDisplay.textContent = docSnap.data().username;
-            } else {
-                usernameDisplay.textContent = user.email;
-            }
-        } catch (error) {
-            console.error("Kullanıcı adı yüklenemedi:", error);
-            usernameDisplay.textContent = user.email;
-        }
-    }
-
-    // Menü davranışları
-    const dropdown = document.getElementById("dropdown-menu");
-    const emailEl = document.getElementById("username-display");
-    emailEl.addEventListener("click", () => { dropdown.classList.toggle("hidden"); });
-    window.addEventListener("click", (e) => { if (!e.target.closest("#user-menu")) dropdown.classList.add("hidden"); });
-
-    // Menü Linkleri
-    document.getElementById("menu-profile").addEventListener("click", () => { window.location.href = "profile.html"; });
-    document.getElementById("menu-logout").addEventListener("click", async () => {
-      await signOut(auth);
-      localStorage.removeItem("loggedInUser");
-      window.location.href = "login.html";
-    });
-
-	document.getElementById("menu-favorites").addEventListener("click", () => {
-		// Favori modu, script.js'de tanımlı
-		window.toggleFavoritesMode();
-	});
-  </script>
-
-  <script type="module" src="script.js"></script> 
+  <script type="module" src="script.js"></script>
 </body>
 </html>
