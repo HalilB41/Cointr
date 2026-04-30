@@ -120,17 +120,31 @@ document.getElementById("username-display").addEventListener("click", () => docu
 document.getElementById("menu-logout").addEventListener("click", () => signOut(auth));
 
 // ==========================================
-// 4. PİYASA VERİLERİ (data.json)
+// 4. PİYASA VERİLERİ (Doğrudan Binance API)
 // ==========================================
 async function fetchMarketData() {
     try {
-        const res = await fetch(`${window.location.origin}/data.json?t=${Date.now()}`);
-        if (!res.ok) return;
-        const data = await res.json();
-        marketDataCache = data.assets || data.coins; 
+        // Artık veriyi senin sitendeki data.json'dan değil, direkt Binance'den anlık çekiyoruz
+        const res = await fetch("https://fapi.binance.com/fapi/v1/ticker/24hr");
+        if (!res.ok) throw new Error("Binance API yanıt vermedi");
+        const rawData = await res.json();
+        
+        // Sadece USDT olanları filtrele, formatla ve hacme göre sırala
+        marketDataCache = rawData
+            .filter(item => item.symbol.endsWith("USDT"))
+            .map(item => ({
+                symbol: item.symbol,
+                price: parseFloat(item.lastPrice),
+                price_change: parseFloat(item.priceChangePercent).toFixed(2),
+                volume: parseFloat(item.quoteVolume)
+            }))
+            .sort((a, b) => b.volume - a.volume);
+            
         renderMarket();
         if(currentUser) renderPortfolio();
-    } catch (e) { console.error("Veri çekilemedi", e); }
+    } catch (e) { 
+        console.error("Piyasa verisi çekilemedi", e); 
+    }
 }
 
 function renderMarket() {
@@ -140,7 +154,8 @@ function renderMarket() {
     list.innerHTML = "";
     
     marketDataCache.filter(c => c.symbol.includes(searchTerm)).slice(0, 50).forEach(asset => {
-        const color = asset.price_change >= 0 ? "var(--profit-green)" : "var(--loss-red)";
+        // Javascript'te metin olan "0.50" veya "-0.50" stringleri sayılarla düzgün kıyaslanır
+        const color = parseFloat(asset.price_change) >= 0 ? "var(--profit-green)" : "var(--loss-red)";
         list.innerHTML += `<div style="display:flex; justify-content:space-between; border-bottom:1px solid #334155; padding:10px 0;">
             <b>${asset.symbol}</b> <span style="color:${color}">${asset.price} (${asset.price_change}%)</span>
         </div>`;
