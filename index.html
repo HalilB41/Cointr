@@ -10,113 +10,140 @@
   <div class="navbar">
     <div class="logo" id="nav-logo" style="cursor: pointer;">🚀 Kripto & Hisse Portföy</div>
     <div id="auth-section">
-      <button id="nav-login">Giriş / Kayıt</button>
+      <button id="nav-login" class="btn-primary">Giriş / Kayıt</button>
       <div id="user-menu" class="hidden">
         <span id="username-display"></span>
         <div id="dropdown-menu" class="dropdown hidden">
           <div class="menu-item" id="menu-home">🏠 Ana Sayfa</div>
           <div class="menu-item" id="menu-profile-edit">⚙️ Profili Düzenle</div>
-          <div class="menu-item" id="admin-panel-btn" class="hidden" style="color: red;">🛡️ Admin</div>
+          <div class="menu-item" id="admin-panel-btn" class="hidden" style="color: #F6465D;">🛡️ Admin</div>
           <div class="menu-item" id="menu-logout">🚪 Çıkış Yap</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- BÖLÜM 1: ANA SAYFA (Portföy, Piyasa, Sohbet) -->
+  <!-- BÖLÜM 1: ANA SAYFA -->
   <div id="home-section" class="main-layout">
+    
+    <!-- Sol Panel: Portföy -->
     <div class="portfolio-section panel">
-      <h2>💼 Sepetim (Portföy)</h2>
+      <h2>💼 Sepetim</h2>
       <div id="portfolio-form" class="hidden">
-        <input type="text" id="asset-name" placeholder="Coin (Örn: BTCUSDT)">
-        <input type="number" id="asset-amount" placeholder="Miktar (Adet)">
-        <input type="number" id="asset-buy-price" placeholder="Alış Fiyatı ($)">
-        <button id="add-asset-btn">Sepete Ekle</button>
+        <div class="input-row">
+            <input type="text" id="asset-name" placeholder="Örn: BTCUSDT veya THYAO">
+            <input type="number" id="asset-amount" placeholder="Adet">
+            <input type="number" id="asset-buy-price" placeholder="Alış ($ veya ₺)">
+        </div>
+        <button id="add-asset-btn" class="btn-success" style="width: 100%; margin-top:10px;">Sepete Ekle</button>
       </div>
-      <p id="guest-portfolio-msg" style="color: var(--text-muted);">Portföy oluşturmak için giriş yapmalısınız.</p>
+      <p id="guest-portfolio-msg" class="text-muted">Portföy oluşturmak için giriş yapmalısınız.</p>
       
       <div class="portfolio-summary">
-        <h3>Toplam Kar/Zarar: <span id="total-pnl">0.00$</span></h3>
+        <h3>Kar/Zarar: <span id="total-pnl">0.00$</span></h3>
       </div>
-      <table id="portfolio-table">
+      <table class="cmc-table">
         <thead>
-          <tr><th>Varlık</th><th>Miktar</th><th>Alış</th><th>Güncel</th><th>K/Z</th></tr>
+          <tr><th>Varlık</th><th>Adet</th><th>Alış</th><th>Güncel</th><th>K/Z</th></tr>
         </thead>
         <tbody id="portfolio-body"></tbody>
       </table>
     </div>
 
+    <!-- Orta ve Sağ Panel: Piyasalar (Genişletildi) -->
     <div class="market-section panel">
-      <h2>📈 Canlı Piyasalar</h2>
-      <input type="text" id="market-search" placeholder="Coin Ara...">
-      <div class="market-list" id="market-list"></div>
-    </div>
-
-    <div class="chat-section panel">
-      <h2>💬 Kripto Sohbet</h2>
-      <div id="chat-box" class="chat-box"></div>
-      <div class="chat-input-area">
-        <input type="text" id="chat-input" placeholder="Mesajınızı yazın..." disabled>
-        <button id="chat-send" disabled>Gönder</button>
+      <div class="market-header">
+        <h2>📈 Canlı Piyasalar</h2>
+        <div class="market-tabs">
+            <button id="tab-crypto" class="tab-btn active">Kripto</button>
+            <button id="tab-bist" class="tab-btn">BIST (Demo)</button>
+        </div>
+        <input type="text" id="market-search" placeholder="Coin/Hisse Ara...">
+      </div>
+      <div class="table-responsive">
+          <table class="cmc-table">
+            <thead>
+              <tr>
+                  <th>#</th>
+                  <th style="text-align: left;">Varlık Adı</th>
+                  <th>Fiyat</th>
+                  <th>24s Değişim</th>
+                  <th>Hacim (24s)</th>
+                  <th>İşlem</th>
+              </tr>
+            </thead>
+            <tbody id="market-list"></tbody>
+          </table>
       </div>
     </div>
+
   </div>
 
-  <!-- BÖLÜM 2: PROFİL DÜZENLEME EKRANI (Gizli Bölme) -->
-  <div id="edit-profile-section" class="panel hidden" style="max-width: 600px; margin: 40px auto;">
+  <!-- BÖLÜM 2: PROFİL DÜZENLEME EKRANI (Hatalar Giderildi) -->
+  <div id="edit-profile-section" class="panel hidden form-panel">
     <h2>⚙️ Profili Düzenle</h2>
     <form id="profile-form">
       <div class="form-group"><label>E-posta (Değiştirilemez)</label><input type="email" id="profile-email" disabled /></div>
       <div class="form-group"><label>Kullanıcı Adı</label><input type="text" id="profile-username" placeholder="Görünen adınız..." /></div>
       <div class="form-group"><label>Açıklama (Bio)</label><textarea id="profile-bio" rows="4" placeholder="Kendinden bahset..."></textarea></div>
-      <button type="submit" class="btn-save" id="btn-save-profile">Profili Kaydet</button>
+      <button type="submit" class="btn-primary" id="btn-save-profile">Profili Kaydet</button>
     </form>
     <hr>
     <form id="password-form">
       <h2>🔐 Şifre Değiştir</h2>
       <div class="form-group"><input type="password" id="new-password" placeholder="Yeni Şifre (En az 6 karakter)" /></div>
-      <button type="submit" class="btn-save" id="btn-save-password">Şifreyi Güncelle</button>
+      <button type="submit" class="btn-primary" id="btn-save-password">Şifreyi Güncelle</button>
     </form>
   </div>
 
-  <!-- BÖLÜM 3: GİRİŞ VE KAYIT EKRANI (Gizli Bölme) -->
-  <div id="auth-page-section" class="panel hidden" style="max-width: 400px; margin: 50px auto; text-align: center;">
-    
-    <!-- Giriş Yap Kutusu -->
+  <!-- BÖLÜM 3: GİRİŞ VE KAYIT EKRANI -->
+  <div id="auth-page-section" class="panel hidden form-panel">
     <div id="login-box">
-      <h2 style="margin-bottom: 20px;">🔐 Giriş Yap</h2>
+      <h2>🔐 Giriş Yap</h2>
       <div class="form-group"><input type="email" id="login-email" placeholder="E-posta"></div>
       <div class="form-group"><input type="password" id="login-password" placeholder="Şifre"></div>
-      <button id="btn-login-submit" style="width: 100%; margin-bottom: 15px;">Giriş Yap</button>
-      <p style="color: var(--text-muted);">Hesabın yok mu? <a href="#" id="toggle-to-register" style="color: var(--accent-blue); text-decoration: none; font-weight: bold;">Kayıt Ol</a></p>
+      <button id="btn-login-submit" class="btn-primary">Giriş Yap</button>
+      <p class="text-muted">Hesabın yok mu? <a href="#" id="toggle-to-register">Kayıt Ol</a></p>
     </div>
 
-    <!-- Kayıt Ol Kutusu -->
     <div id="register-box" class="hidden">
-      <h2 style="margin-bottom: 20px;">📝 Kayıt Ol</h2>
-      <div class="form-group"><input type="text" id="reg-username" placeholder="Kullanıcı Adı (Zorunlu)"></div>
+      <h2>📝 Kayıt Ol</h2>
+      <div class="form-group"><input type="text" id="reg-username" placeholder="Kullanıcı Adı (Zorunlu ve Benzersiz)"></div>
       <div class="form-group"><input type="email" id="reg-email" placeholder="E-posta"></div>
       <div class="form-group"><input type="password" id="reg-password" placeholder="Şifre (min. 6)"></div>
-      <button id="btn-register-submit" style="width: 100%; margin-bottom: 15px;">Aramıza Katıl</button>
-      <p style="color: var(--text-muted);">Hesabın var mı? <a href="#" id="toggle-to-login" style="color: var(--accent-blue); text-decoration: none; font-weight: bold;">Giriş Yap</a></p>
+      <button id="btn-register-submit" class="btn-primary">Aramıza Katıl</button>
+      <p class="text-muted">Hesabın var mı? <a href="#" id="toggle-to-login">Giriş Yap</a></p>
     </div>
   </div>
 
-  <!-- BÖLÜM 4: BAŞKA KULLANICI PROFİLİ GÖRÜNTÜLEME MODALI -->
+  <!-- MODAL: KULLANICI PROFİLİ -->
   <div id="profile-modal" class="modal hidden">
     <div class="modal-content">
       <span class="close-modal">&times;</span>
       <h2 id="modal-username">Kullanıcı Adı</h2>
       <p id="modal-bio">Biyografi yükleniyor...</p>
+      <hr>
       <h3>💼 Portföyü</h3>
       <ul id="modal-portfolio-list"></ul>
     </div>
   </div>
 
-  <!-- Reklam Alanı -->
-  <div class="ad-banner">
-    <p>Sponsorlu Bağlantı - Reklam Alanı</p>
+  <!-- YENİ: SAĞ ALT UÇAN SOHBET BUTONU VE KUTUSU -->
+  <button id="floating-chat-btn">💬 Genel Sohbet</button>
+  <div id="floating-chat-box" class="hidden">
+      <div class="chat-header">
+          💬 Kripto & Hisse Sohbet
+          <span id="close-chat" style="cursor:pointer; color: #F6465D; font-weight:bold;">✖</span>
+      </div>
+      <div id="chat-messages" class="chat-messages"></div>
+      <div class="chat-input-area">
+          <input type="text" id="chat-input" placeholder="Mesajınızı yazın..." disabled>
+          <button id="chat-send" class="btn-primary" disabled>Gönder</button>
+      </div>
   </div>
+
+  <!-- Reklam Alanı -->
+  <div class="ad-banner">Sponsorlu Bağlantı - Reklam Alanı</div>
 
   <script type="module" src="script.js"></script>
 </body>

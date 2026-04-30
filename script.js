@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
 import { getAuth, onAuthStateChanged, signOut, updatePassword, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
-import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js";
+import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, doc, getDoc, setDoc, where, getDocs } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js";
 
 // FİREBASE CONFIG (Senin Bilgilerin)
 const firebaseConfig = {
@@ -20,18 +20,41 @@ const db = getFirestore(app);
 let currentUser = null;
 let currentUsername = "";
 let marketDataCache = [];
+let currentTab = "crypto"; // 'crypto' veya 'bist'
+
+// BIST için Örnek/Demo Veriler (Gerçek veri için Backend API gereklidir)
+const bistDemoData = [
+    { symbol: "THYAO", price: 310.50, price_change: 2.15, volume: 150000000 },
+    { symbol: "ASELS", price: 62.40, price_change: -0.80, volume: 85000000 },
+    { symbol: "TUPRS", price: 104.20, price_change: 1.05, volume: 92000000 },
+    { symbol: "EREGL", price: 185.00, price_change: -1.20, volume: 64000000 },
+    { symbol: "GARAN", price: 74.15, price_change: 0.50, volume: 110000000 }
+];
 
 // ==========================================
-// 1. SPA SAYFA YÖNETİMİ (Bölüm Değiştiriciler)
+// 0. HATA TÜRKÇELEŞTİRİCİ
+// ==========================================
+function translateAuthError(code) {
+    switch (code) {
+        case 'auth/email-already-in-use': return 'Bu e-posta adresi zaten kullanılıyor.';
+        case 'auth/weak-password': return 'Şifre çok zayıf! En az 6 karakter olmalı.';
+        case 'auth/invalid-email': return 'Geçersiz e-posta formatı!';
+        case 'auth/user-not-found': return 'Kullanıcı bulunamadı.';
+        case 'auth/wrong-password': return 'Şifre hatalı!';
+        case 'auth/invalid-credential': return 'Giriş bilgileri hatalı veya geçersiz.';
+        default: return 'Bir hata oluştu: ' + code;
+    }
+}
+
+// ==========================================
+// 1. SPA SAYFA YÖNETİMİ
 // ==========================================
 const homeSection = document.getElementById("home-section");
 const editProfileSection = document.getElementById("edit-profile-section");
 const authPageSection = document.getElementById("auth-page-section");
 
 function showSection(section) {
-    homeSection.classList.add("hidden");
-    editProfileSection.classList.add("hidden");
-    authPageSection.classList.add("hidden");
+    homeSection.classList.add("hidden"); editProfileSection.classList.add("hidden"); authPageSection.classList.add("hidden");
     section.classList.remove("hidden");
 }
 
@@ -41,7 +64,7 @@ document.getElementById("menu-profile-edit").addEventListener("click", () => { s
 document.getElementById("nav-login").addEventListener("click", () => showSection(authPageSection));
 
 // ==========================================
-// 2. GİRİŞ VE KAYIT İŞLEMLERİ
+// 2. GİRİŞ VE BENZERSİZ İSİMLİ KAYIT İŞLEMLERİ
 // ==========================================
 const loginBox = document.getElementById("login-box");
 const registerBox = document.getElementById("register-box");
@@ -57,22 +80,33 @@ document.getElementById("btn-login-submit").addEventListener("click", async () =
     try {
         await signInWithEmailAndPassword(auth, email, password);
         document.getElementById("login-password").value = "";
-        showSection(homeSection); // Başarılı girişte ana sayfaya dön
-    } catch (err) { alert("❌ Hata: Bilgilerinizi kontrol edin."); }
+        showSection(homeSection);
+    } catch (err) { alert("❌ Hata: " + translateAuthError(err.code)); }
 });
 
-// Kayıt Ol
+// Kayıt Ol (Eşsiz İsim Kontrolü)
 document.getElementById("btn-register-submit").addEventListener("click", async () => {
     const username = document.getElementById("reg-username").value.trim();
     const email = document.getElementById("reg-email").value.trim();
     const password = document.getElementById("reg-password").value.trim();
+    
     if(!username || !email || !password) return alert("Tüm alanları doldurun!");
+
     try {
+        // İsim kullanılıyor mu kontrolü
+        const q = query(collection(db, "users"), where("username", "==", username));
+        const querySnapshot = await getDocs(q);
+        
+        if (!querySnapshot.empty) {
+            return alert("❌ Bu kullanıcı adı zaten alınmış! Lütfen başka bir isim seçin.");
+        }
+
+        // Kullanılmıyorsa kayıt et
         const userCred = await createUserWithEmailAndPassword(auth, email, password);
         await setDoc(doc(db, "users", userCred.user.uid), { username, email, bio: "Merhaba!", portfolio: [] });
         document.getElementById("reg-password").value = "";
         showSection(homeSection);
-    } catch (err) { alert("❌ Hata: " + err.message); }
+    } catch (err) { alert("❌ Hata: " + translateAuthError(err.code)); }
 });
 
 // ==========================================
@@ -89,14 +123,12 @@ onAuthStateChanged(auth, async (user) => {
         document.getElementById("username-display").textContent = currentUsername;
         if (user.email === "admin@gmail.com") document.getElementById("admin-panel-btn").classList.remove("hidden");
 
-        // İzinler
         document.getElementById("portfolio-form").classList.remove("hidden");
         document.getElementById("guest-portfolio-msg").classList.add("hidden");
         document.getElementById("chat-input").disabled = false;
         document.getElementById("chat-send").disabled = false;
         document.getElementById("chat-input").placeholder = "Mesajınızı yazın...";
 
-        // Form Doldurma
         document.getElementById("profile-email").value = user.email;
         document.getElementById("profile-username").value = currentUsername;
         document.getElementById("profile-bio").value = userDoc.exists() ? (userDoc.data().bio || "") : "";
@@ -120,16 +152,15 @@ document.getElementById("username-display").addEventListener("click", () => docu
 document.getElementById("menu-logout").addEventListener("click", () => signOut(auth));
 
 // ==========================================
-// 4. PİYASA VERİLERİ (Doğrudan Binance API)
+// 4. PİYASA VERİLERİ (CMC Tarzı Tablo & BIST)
 // ==========================================
 async function fetchMarketData() {
     try {
-        // Artık veriyi senin sitendeki data.json'dan değil, direkt Binance'den anlık çekiyoruz
-        const res = await fetch("https://fapi.binance.com/fapi/v1/ticker/24hr");
-        if (!res.ok) throw new Error("Binance API yanıt vermedi");
+        // Binance API (Spot) - CORS sorunu daha azdır
+        const res = await fetch("https://api.binance.com/api/v3/ticker/24hr");
+        if (!res.ok) throw new Error("API hatası");
         const rawData = await res.json();
         
-        // Sadece USDT olanları filtrele, formatla ve hacme göre sırala
         marketDataCache = rawData
             .filter(item => item.symbol.endsWith("USDT"))
             .map(item => ({
@@ -142,55 +173,54 @@ async function fetchMarketData() {
             
         renderMarket();
         if(currentUser) renderPortfolio();
-    } catch (e) { 
-        console.error("Piyasa verisi çekilemedi", e); 
-    }
+    } catch (e) { console.error("Piyasa verisi çekilemedi", e); }
 }
 
 function renderMarket() {
     const list = document.getElementById("market-list");
     if (!list) return;
-    const searchTerm = document.getElementById("market-search")?.value.toUpperCase() || "";
+    const searchTerm = document.getElementById("market-search").value.toUpperCase();
     list.innerHTML = "";
     
-    marketDataCache.filter(c => c.symbol.includes(searchTerm)).slice(0, 50).forEach(asset => {
-        // Javascript'te metin olan "0.50" veya "-0.50" stringleri sayılarla düzgün kıyaslanır
-        const color = parseFloat(asset.price_change) >= 0 ? "var(--profit-green)" : "var(--loss-red)";
-        list.innerHTML += `<div style="display:flex; justify-content:space-between; border-bottom:1px solid #334155; padding:10px 0;">
-            <b>${asset.symbol}</b> <span style="color:${color}">${asset.price} (${asset.price_change}%)</span>
-        </div>`;
+    // Tab seçimine göre datayı belirle
+    let dataToRender = currentTab === "crypto" ? marketDataCache : bistDemoData;
+
+    dataToRender.filter(c => c.symbol.includes(searchTerm)).slice(0, 50).forEach((asset, index) => {
+        const pChange = parseFloat(asset.price_change);
+        const colorClass = pChange >= 0 ? "text-green" : "text-red";
+        const arrow = pChange >= 0 ? "▲" : "▼";
+        const formattedPrice = asset.price < 1 ? asset.price.toFixed(5) : asset.price.toLocaleString('en-US', { minimumFractionDigits: 2 });
+        const currency = currentTab === "crypto" ? "$" : "₺";
+
+        list.innerHTML += `
+        <tr>
+            <td class="text-muted">${index + 1}</td>
+            <td style="text-align: left;" class="symbol-name">${asset.symbol}</td>
+            <td style="font-weight: bold;">${currency}${formattedPrice}</td>
+            <td class="${colorClass}">${arrow} ${Math.abs(pChange)}%</td>
+            <td class="text-muted">${currency}${(asset.volume / 1000000).toFixed(1)}M</td>
+            <td><button class="btn-success" style="padding: 5px 10px; font-size: 0.8rem;" onclick="document.getElementById('asset-name').value='${asset.symbol}'">Al</button></td>
+        </tr>`;
     });
 }
-document.getElementById("market-search")?.addEventListener("input", renderMarket);
+document.getElementById("market-search").addEventListener("input", renderMarket);
 
-// ==========================================
-// 5. PROFİL GÜNCELLEME
-// ==========================================
-document.getElementById("profile-form").addEventListener("submit", async (e) => {
-    e.preventDefault();
-    try {
-        await setDoc(doc(db, "users", currentUser.uid), {
-            username: document.getElementById("profile-username").value.trim(),
-            bio: document.getElementById("profile-bio").value.trim()
-        }, { merge: true });
-        alert("✅ Profil güncellendi!");
-        showSection(homeSection);
-    } catch (err) { alert("Hata: " + err.message); }
+document.getElementById("tab-crypto").addEventListener("click", (e) => {
+    currentTab = "crypto";
+    document.getElementById("tab-crypto").classList.add("active");
+    document.getElementById("tab-bist").classList.remove("active");
+    renderMarket();
 });
 
-document.getElementById("password-form").addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const pass = document.getElementById("new-password").value;
-    if(pass.length < 6) return alert("Şifre en az 6 karakter olmalı!");
-    try {
-        await updatePassword(currentUser, pass);
-        alert("✅ Şifre güncellendi!");
-        document.getElementById("new-password").value = "";
-    } catch (err) { alert("Hata: " + err.message); }
+document.getElementById("tab-bist").addEventListener("click", (e) => {
+    currentTab = "bist";
+    document.getElementById("tab-bist").classList.add("active");
+    document.getElementById("tab-crypto").classList.remove("active");
+    renderMarket();
 });
 
 // ==========================================
-// 6. PORTFÖY YÖNETİMİ
+// 5. PORTFÖY YÖNETİMİ
 // ==========================================
 document.getElementById("add-asset-btn").addEventListener("click", async () => {
     const symbol = document.getElementById("asset-name").value.toUpperCase();
@@ -205,9 +235,7 @@ document.getElementById("add-asset-btn").addEventListener("click", async () => {
     portfolio.push({ symbol, amount, buyPrice });
     await setDoc(userRef, { portfolio }, { merge: true });
     
-    document.getElementById("asset-name").value = "";
-    document.getElementById("asset-amount").value = "";
-    document.getElementById("asset-buy-price").value = "";
+    document.getElementById("asset-name").value = ""; document.getElementById("asset-amount").value = ""; document.getElementById("asset-buy-price").value = "";
     renderPortfolio();
 });
 
@@ -216,31 +244,44 @@ async function renderPortfolio() {
     const userDoc = await getDoc(doc(db, "users", currentUser.uid));
     const portfolio = userDoc.exists() ? (userDoc.data().portfolio || []) : [];
     const tbody = document.getElementById("portfolio-body");
-    tbody.innerHTML = "";
-    let totalPnL = 0;
+    tbody.innerHTML = ""; let totalPnL = 0;
 
     portfolio.forEach(p => {
-        const marketData = marketDataCache.find(m => m.symbol === p.symbol);
+        // Önce kriptoda ara, bulamazsa BIST demosunda ara
+        let marketData = marketDataCache.find(m => m.symbol === p.symbol) || bistDemoData.find(m => m.symbol === p.symbol);
         const currentPrice = marketData ? marketData.price : p.buyPrice;
         const pnl = (p.amount * currentPrice) - (p.amount * p.buyPrice);
         totalPnL += pnl;
 
-        const color = pnl >= 0 ? "var(--profit-green)" : "var(--loss-red)";
-        tbody.innerHTML += `<tr><td>${p.symbol}</td><td>${p.amount}</td><td>${p.buyPrice}$</td><td>${currentPrice}$</td><td style="color:${color}">${pnl.toFixed(2)}$</td></tr>`;
+        const colorClass = pnl >= 0 ? "text-green" : "text-red";
+        tbody.innerHTML += `<tr><td style="text-align:left;">${p.symbol}</td><td>${p.amount}</td><td>${p.buyPrice}</td><td>${currentPrice.toFixed(4)}</td><td class="${colorClass}">${pnl.toFixed(2)}</td></tr>`;
     });
     
     const totalEl = document.getElementById("total-pnl");
-    totalEl.textContent = totalPnL.toFixed(2) + "$";
-    totalEl.style.color = totalPnL >= 0 ? "var(--profit-green)" : "var(--loss-red)";
+    totalEl.textContent = totalPnL.toFixed(2);
+    totalEl.className = totalPnL >= 0 ? "text-green" : "text-red";
 }
 
 // ==========================================
-// 7. SOHBET VE MODAL
+// 6. UÇAN SOHBET (FLOATING CHAT) VE MODAL
 // ==========================================
-const chatBox = document.getElementById("chat-box");
-if (chatBox) {
+const chatBtn = document.getElementById("floating-chat-btn");
+const chatBoxWindow = document.getElementById("floating-chat-box");
+const closeChat = document.getElementById("close-chat");
+
+chatBtn.addEventListener("click", () => {
+    chatBoxWindow.classList.remove("hidden");
+    chatBtn.classList.add("hidden");
+});
+closeChat.addEventListener("click", () => {
+    chatBoxWindow.classList.add("hidden");
+    chatBtn.classList.remove("hidden");
+});
+
+const chatMessages = document.getElementById("chat-messages");
+if (chatMessages) {
     onSnapshot(query(collection(db, "chat"), orderBy("timestamp", "asc")), (snapshot) => {
-        chatBox.innerHTML = "";
+        chatMessages.innerHTML = "";
         snapshot.forEach((doc) => {
             const msg = doc.data();
             const msgDiv = document.createElement("div");
@@ -254,11 +295,10 @@ if (chatBox) {
             const textSpan = document.createElement("span");
             textSpan.textContent = msg.text; 
 
-            msgDiv.appendChild(nameSpan);
-            msgDiv.appendChild(textSpan);
-            chatBox.appendChild(msgDiv);
+            msgDiv.appendChild(nameSpan); msgDiv.appendChild(textSpan);
+            chatMessages.appendChild(msgDiv);
         });
-        chatBox.scrollTop = chatBox.scrollHeight;
+        chatMessages.scrollTop = chatMessages.scrollHeight;
     });
 
     document.getElementById("chat-send").addEventListener("click", async () => {
@@ -268,7 +308,6 @@ if (chatBox) {
             input.value = "";
         }
     });
-
     document.getElementById("chat-input").addEventListener("keypress", (e) => { if (e.key === 'Enter') document.getElementById("chat-send").click(); });
 }
 
@@ -285,10 +324,10 @@ window.showUserProfile = async function(uid) {
         if(data.portfolio && data.portfolio.length > 0) {
             data.portfolio.forEach(p => {
                 const li = document.createElement("li");
-                li.textContent = `${p.amount} Adet ${p.symbol} (Alış: ${p.buyPrice}$)`;
+                li.textContent = `${p.amount} Adet ${p.symbol} (Alış: ${p.buyPrice})`;
                 ul.appendChild(li);
             });
-        } else { ul.innerHTML = "<li>Henüz portföy eklememiş.</li>"; }
+        } else { ul.innerHTML = "<li class='text-muted'>Henüz portföy eklememiş.</li>"; }
         modal.classList.remove("hidden");
     }
 }

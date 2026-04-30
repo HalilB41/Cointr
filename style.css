@@ -1,54 +1,102 @@
 :root {
-  --bg-dark: #0f172a;
-  --bg-panel: #1e293b;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --accent-blue: #3b82f6;
-  --profit-green: #10b981;
-  --loss-red: #ef4444;
+  --bg-main: #0B0E11; /* Gerçek karanlık mod */
+  --bg-panel: #1E2329; /* Panel arkaplanı */
+  --bg-hover: #2B3139;
+  --text-main: #EAECEF;
+  --text-muted: #848E9C;
+  --binance-yellow: #FCD535;
+  --profit-green: #0ECB81;
+  --loss-red: #F6465D;
 }
 
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
 body {
-  background-color: var(--bg-dark);
+  background-color: var(--bg-main);
   color: var(--text-main);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0; padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .navbar {
   display: flex; justify-content: space-between; align-items: center;
   padding: 15px 30px; background: var(--bg-panel);
-  border-bottom: 2px solid var(--accent-blue);
+  border-bottom: 1px solid #2B3139;
 }
+
+.logo { font-size: 1.2rem; font-weight: bold; color: var(--binance-yellow); }
 
 .main-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px; padding: 20px; height: 80vh;
+  grid-template-columns: 350px 1fr; /* Sol taraf portföy, sağ taraf dev piyasa tablosu */
+  gap: 20px; padding: 20px;
 }
 
 .panel {
-  background: var(--bg-panel); border-radius: 12px;
-  padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  overflow-y: auto;
+  background: var(--bg-panel); border-radius: 8px;
+  padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
-button {
-  background: var(--accent-blue); color: white;
-  border: none; padding: 10px 15px; border-radius: 8px;
-  cursor: pointer; font-weight: bold; transition: 0.3s;
+.form-panel { max-width: 450px; margin: 50px auto; text-align: center; }
+
+/* Formlar ve Inputlar (DÜZELTİLDİ) */
+.form-group { margin-bottom: 15px; text-align: left; width: 100%; }
+.form-group label { display: block; margin-bottom: 5px; color: var(--text-muted); font-size: 0.9rem; }
+.form-group input, .form-group textarea, #market-search, #chat-input, .input-row input {
+  width: 100%; padding: 12px; border-radius: 6px;
+  background: var(--bg-main); border: 1px solid #2B3139; 
+  color: var(--text-main); font-family: inherit; outline: none;
 }
-button:hover { filter: brightness(1.2); }
+.form-group input:focus, .form-group textarea:focus { border-color: var(--binance-yellow); }
+.input-row { display: flex; gap: 5px; }
 
-.ad-banner {
-  background: #334155; text-align: center; padding: 20px;
-  margin: 20px; border-radius: 10px; color: var(--text-muted);
+/* Butonlar */
+button { border: none; padding: 10px 15px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.2s; color: #1E2329;}
+.btn-primary { background: var(--binance-yellow); width: 100%; }
+.btn-primary:hover { background: #e0bd2e; }
+.btn-success { background: var(--profit-green); color: white;}
+.btn-success:hover { background: #0b9e65; }
+
+/* CoinMarketCap Stili Tablolar */
+.market-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px; }
+.market-tabs { display: flex; gap: 10px; }
+.tab-btn { background: transparent; color: var(--text-muted); padding: 5px 15px; border-radius: 20px; border: 1px solid #2B3139; }
+.tab-btn.active { background: var(--bg-hover); color: var(--text-main); border-color: var(--text-muted); }
+
+.table-responsive { overflow-x: auto; }
+.cmc-table { width: 100%; border-collapse: collapse; text-align: right; font-size: 0.95rem; }
+.cmc-table th { color: var(--text-muted); font-weight: normal; padding: 12px 8px; border-bottom: 1px solid #2B3139; }
+.cmc-table td { padding: 12px 8px; border-bottom: 1px solid #2B3139; vertical-align: middle; }
+.cmc-table tbody tr:hover { background: var(--bg-hover); }
+
+/* Renkler ve Semboller */
+.text-green { color: var(--profit-green) !important; }
+.text-red { color: var(--loss-red) !important; }
+.text-muted { color: var(--text-muted); font-size: 0.85rem;}
+.symbol-name { font-weight: bold; color: var(--text-main); display: flex; align-items: center; gap:8px;}
+
+/* Uçan Sohbet (Floating Chat) */
+#floating-chat-btn {
+  position: fixed; bottom: 20px; right: 20px;
+  background: var(--binance-yellow); color: #1E2329;
+  padding: 15px 25px; border-radius: 30px; font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5); z-index: 1000;
 }
+#floating-chat-box {
+  position: fixed; bottom: 80px; right: 20px;
+  width: 350px; height: 500px; background: var(--bg-panel);
+  border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.8);
+  display: flex; flex-direction: column; z-index: 1001; border: 1px solid #2B3139;
+}
+.chat-header { padding: 15px; border-bottom: 1px solid #2B3139; display: flex; justify-content: space-between; font-weight: bold; }
+.chat-messages { flex: 1; overflow-y: auto; padding: 15px; }
+.chat-message { margin-bottom: 12px; font-size: 0.9rem; word-wrap: break-word; }
+.chat-username { color: var(--binance-yellow); font-weight: bold; cursor: pointer; }
+.chat-input-area { padding: 10px; border-top: 1px solid #2B3139; display: flex; gap: 5px; }
 
-.chat-box { height: 75%; overflow-y: auto; margin-bottom: 10px; }
-.chat-message { margin-bottom: 10px; padding: 10px; background: #334155; border-radius: 8px;}
-.chat-username { color: var(--accent-blue); font-weight: bold; cursor: pointer; }
-
-.modal { position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); display:flex; justify-content:center; align-items:center; }
-.modal-content { background: var(--bg-panel); padding: 30px; border-radius: 12px; width: 400px;}
+/* Modallar vb. */
 .hidden { display: none !important; }
+.modal { position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); display:flex; justify-content:center; align-items:center; z-index: 2000;}
+.modal-content { background: var(--bg-panel); padding: 30px; border-radius: 8px; width: 400px; max-width: 90%;}
+.close-modal { float: right; font-size: 24px; cursor: pointer; color: var(--loss-red); }
+a { color: var(--binance-yellow); text-decoration: none; }
+.ad-banner { background: #1E2329; text-align: center; padding: 15px; margin-top: 20px; color: var(--text-muted); font-size: 0.8rem; }
